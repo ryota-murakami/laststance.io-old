@@ -4,6 +4,13 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 
+export interface Post {
+  id: string
+  date: string
+  title: string
+  contentHtml: string
+}
+
 const postsDirectory = path.join(process.cwd(), 'posts')
 
 export function getSortedPostsData() {
@@ -27,7 +34,7 @@ export function getSortedPostsData() {
     }
   })
   // Sort posts by date
-  return allPostsData.sort((a, b) => {
+  return allPostsData.sort((a: Post, b: Post) => {
     if (a.date < b.date) {
       return 1
     } else {

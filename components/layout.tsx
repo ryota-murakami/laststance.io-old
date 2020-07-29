@@ -6,7 +6,11 @@ import Link from 'next/link'
 const name = 'Ryota Murakami'
 export const siteTitle = 'Laststance Website'
 
-export default function Layout({ children, home }) {
+interface Props {
+  home?: boolean // is home screen or not
+}
+
+const Layout: React.FC<Props> = ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -64,3 +68,5 @@ export default function Layout({ children, home }) {
     </div>
   )
 }
+
+export default Layout
