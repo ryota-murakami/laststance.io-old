@@ -3,8 +3,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Ryota Murakami'
-export const siteTitle = 'Laststance Website'
+const name = 'Laststance'
+export const siteTitle = 'Laststance'
 
 interface Props {
   home?: boolean // is home screen or not
@@ -17,7 +17,7 @@ const Layout: React.FC<Props> = ({ children, home }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Inv"
         />
         <meta
           property="og:image"
@@ -32,7 +32,7 @@ const Layout: React.FC<Props> = ({ children, home }) => {
         {home ? (
           <>
             <img
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
