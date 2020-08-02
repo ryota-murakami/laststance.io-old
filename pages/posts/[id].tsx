@@ -27,6 +27,9 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        {/* 
+        // @ts-ignore */}
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
