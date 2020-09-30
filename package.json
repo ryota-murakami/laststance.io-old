@@ -1,6 +1,5 @@
 {
-  "name": "cms-sanity",
-  "version": "1.0.0",
+  "name": "laststance-website",
   "scripts": {
     "dev": "next",
     "build": "next build",
