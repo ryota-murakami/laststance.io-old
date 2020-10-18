@@ -6,7 +6,6 @@ export default function Header() {
       <Link href="/">
         <a className="hover:underline">Laststance.io</a>
       </Link>
-      .
     </h2>
   )
 }
