@@ -13,13 +13,13 @@
     "date-fns": "2.10.0",
     "next": "^9.5.5",
     "prettier": "^2.1.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.9.2"
+    "tailwindcss": "^1.9.6"
   },
   "license": "MIT"
 }
