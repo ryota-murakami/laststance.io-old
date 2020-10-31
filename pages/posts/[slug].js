@@ -27,7 +27,8 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Laststance.io is indipendent organization for OSS activity.
+                  {post.title} | Laststance.io is indipendent organization for
+                  OSS activity.
                 </title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>

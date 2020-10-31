@@ -12,7 +12,12 @@ export default function Footer() {
             >
               View on GitHub
             </a>
-            <p>I'm sorry about this crappy website.<br/>I'm in early phase of development so this will be styled gradually!</p>
+            <p>
+              I'm sorry about this crappy website.
+              <br />
+              I'm in early phase of development so this will be styled
+              gradually!
+            </p>
           </div>
         </div>
       </Container>
