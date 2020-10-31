@@ -10,7 +10,7 @@
     "@sanity/client": "2.0.1",
     "@sanity/image-url": "0.140.19",
     "classnames": "2.2.6",
-    "date-fns": "2.10.0",
+    "date-fns": "2.16.1",
     "next": "^10.0.0",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
