@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { GetStaticProps, GetStaticPaths } from 'next'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
@@ -59,7 +60,10 @@ const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
 
 export default Posts
 
-export async function getStaticProps({ params, preview = false }) {
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  preview = false,
+}) => {
   const data = await getPostAndMorePosts(params.slug, preview)
   return {
     props: {
@@ -70,7 +74,7 @@ export async function getStaticProps({ params, preview = false }) {
   }
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug()
   return {
     paths:
