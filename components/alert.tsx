@@ -1,7 +1,8 @@
 import Container from './container'
 import cn from 'classnames'
+import { ReactElement } from 'react'
 
-export default function Alert({ preview }) {
+export default function Alert({ preview }): ReactElement {
   return (
     <div
       className={cn('border-b', {

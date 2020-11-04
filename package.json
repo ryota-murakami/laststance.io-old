@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js",
-    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix"
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "2.0.7",

@@ -2,7 +2,11 @@ import Alert from '../components/alert'
 import Footer from '../components/footer'
 import Meta from '../components/meta'
 
-export default function Layout({ preview, children }) {
+interface Props {
+  preview: boolean
+}
+
+const Layout: React.FC<Props> = ({ preview, children }) => {
   return (
     <>
       <Meta />
@@ -14,3 +18,5 @@ export default function Layout({ preview, children }) {
     </>
   )
 }
+
+export default Layout

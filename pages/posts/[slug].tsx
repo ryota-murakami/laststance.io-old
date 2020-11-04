@@ -10,8 +10,15 @@ import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
+import { MorePosts, Post } from '../../DataStructure'
 
-export default function Post({ post, morePosts, preview }) {
+interface Props {
+  post: Post
+  morePosts: MorePosts
+  preview: boolean
+}
+
+const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -37,6 +44,7 @@ export default function Post({ post, morePosts, preview }) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                slug={post.slug}
               />
               <PostBody content={post.content} />
             </article>
@@ -48,6 +56,8 @@ export default function Post({ post, morePosts, preview }) {
     </Layout>
   )
 }
+
+export default Posts
 
 export async function getStaticProps({ params, preview = false }) {
   const data = await getPostAndMorePosts(params.slug, preview)
