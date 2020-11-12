@@ -21,16 +21,7 @@ const Alert: React.FC<Props> = ({ preview }) => {
             to exit preview mode.
           </div>
         ) : (
-          <div className="flex py-2">
-            The source code for this blog is{' '}
-            <a
-              href="https://github.com/laststance/laststance.io"
-              className="underline hover:text-success duration-200 transition-colors"
-            >
-              available on GitHub
-            </a>
-            .
-          </div>
+          <div className="flex py-2"></div>
         )}
       </Container>
     </div>
