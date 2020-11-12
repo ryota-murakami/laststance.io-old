@@ -7,7 +7,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
     "typecheck": "tsc --noEmit",
-    "analyze": "ANALYZE=true yarn build"
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^10.0.1",
