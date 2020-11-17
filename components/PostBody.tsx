@@ -1,4 +1,4 @@
-import markdownStyles from './markdown-styles.module.css'
+import markdownStyles from './MarkdownStyles.module.css'
 import BlockContent from '@sanity/block-content-to-react'
 
 export default function PostBody({ content }) {

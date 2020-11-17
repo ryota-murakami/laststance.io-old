@@ -1,4 +1,4 @@
-import Container from './container'
+import Container from './Container'
 import React from 'react'
 
 interface Props {
