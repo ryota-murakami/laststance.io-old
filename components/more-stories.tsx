@@ -1,6 +1,12 @@
 import PostPreview from '../components/post-preview'
+import React from 'react'
+import { MorePosts } from '../DataStructure'
 
-export default function MoreStories({ posts }) {
+interface Props {
+  posts: MorePosts
+}
+
+const MoreStories: React.FC<Props> = ({ posts }) => {
   return (
     <section>
       <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
@@ -21,3 +27,5 @@ export default function MoreStories({ posts }) {
     </section>
   )
 }
+
+export default MoreStories
