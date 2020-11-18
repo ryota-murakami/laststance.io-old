@@ -4,7 +4,6 @@ import HeroPost from '../../components/hero-post'
 import Intro from '../../components/Intro'
 import Layout from '../../components/Layout'
 import { getAllPostsForHome } from '../../lib/api'
-import Head from 'next/head'
 import { GetStaticProps } from 'next'
 import { AllPosts } from '../../DataStructure'
 
