@@ -18,9 +18,6 @@ const IndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   const morePosts = allPosts.slice(1)
   return (
     <Layout preview={preview}>
-      <Head>
-        <title>Laststance.io</title>
-      </Head>
       <Container>
         <Intro />
         {heroPost && (
