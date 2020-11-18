@@ -1,13 +1,12 @@
 import { useRouter } from 'next/router'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import ErrorPage from 'next/error'
-import Container from '../../components/Container'
+import Container from '../../components/generic/Container'
 import PostBody from '../../components/PostBody'
 import MoreStories from '../../components/MoreStories'
 import LeftUpperWebSiteNameLink from '../../components/LeftUpperWebSiteNameLink'
 import PostHeader from '../../components/PostHeader'
 import SectionSeparator from '../../components/SectionSeparator'
-import Layout from '../../components/Layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/PostTitle'
 import Head from 'next/head'
@@ -25,36 +24,34 @@ const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
-      <Container>
-        <LeftUpperWebSiteNameLink />
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article>
-              <Head>
-                <title>
-                  {post.title} | Laststance.io is indipendent organization for
-                  OSS activity.
-                </title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-                slug={post.slug}
-              />
-              <PostBody content={post.content} />
-            </article>
-            <SectionSeparator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </>
-        )}
-      </Container>
-    </Layout>
+    <Container>
+      <LeftUpperWebSiteNameLink />
+      {router.isFallback ? (
+        <PostTitle>Loading…</PostTitle>
+      ) : (
+        <>
+          <article>
+            <Head>
+              <title>
+                {post.title} | Laststance.io is indipendent organization for OSS
+                activity.
+              </title>
+              {/* <meta property="og:image" content={post.ogImage.url} /> */}
+            </Head>
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              author={post.author}
+              slug={post.slug}
+            />
+            <PostBody content={post.content} />
+          </article>
+          <SectionSeparator />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        </>
+      )}
+    </Container>
   )
 }
 

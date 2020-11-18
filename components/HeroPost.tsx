@@ -1,9 +1,25 @@
+import React from 'react'
 import Avatar from './Avatar'
 import Date from './Date'
 import CoverImage from './CoverImage'
 import Link from 'next/link'
+import { Post } from '../DataStructure'
 
-export default function HeroPost({ title, coverImage, date, author, slug }) {
+interface Props {
+  title: Post['title']
+  coverImage: Post['coverImage']
+  date: Post['date']
+  author: Post['author']
+  slug: Post['slug']
+}
+
+const HeroPost: React.FC<Props> = ({
+  title,
+  coverImage,
+  date,
+  author,
+  slug,
+}) => {
   return (
     <section>
       <div className="mb-8 md:mb-16">
@@ -27,3 +43,5 @@ export default function HeroPost({ title, coverImage, date, author, slug }) {
     </section>
   )
 }
+
+export default HeroPost
