@@ -1,13 +1,13 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
-import Head from 'next/head'
+import HeadMeta from '../components/HeadMeta'
+import React from 'react'
 
+// @Todo Create control frow pass preview={preview} Component if Component was Posts,[slug].tsx
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
-      <Head>
-        <title>Laststance.io</title>
-      </Head>
+      <HeadMeta />
       <Component {...pageProps} />
     </>
   )

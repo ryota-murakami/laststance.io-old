@@ -4,7 +4,7 @@ import ErrorPage from 'next/error'
 import Container from '../../components/Container'
 import PostBody from '../../components/PostBody'
 import MoreStories from '../../components/MoreStories'
-import Header from '../../components/Header'
+import LeftUpperWebSiteNameLink from '../../components/LeftUpperWebSiteNameLink'
 import PostHeader from '../../components/PostHeader'
 import SectionSeparator from '../../components/SectionSeparator'
 import Layout from '../../components/Layout'
@@ -27,7 +27,7 @@ const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        <LeftUpperWebSiteNameLink />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (

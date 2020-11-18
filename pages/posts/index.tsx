@@ -1,6 +1,6 @@
 import Container from '../../components/Container'
 import MoreStories from '../../components/MoreStories'
-import HeroPost from '../../components/hero-post'
+import HeroPost from '../../components/HeroPost'
 import Intro from '../../components/Intro'
 import Layout from '../../components/Layout'
 import { getAllPostsForHome } from '../../lib/api'

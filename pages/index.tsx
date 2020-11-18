@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 const IndexPage: React.FC = () => {
-  return <div>IndexPage</div>
+  return <Layout>IndexPage</Layout>
 }
 
 export default IndexPage
