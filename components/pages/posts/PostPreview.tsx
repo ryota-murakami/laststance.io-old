@@ -1,6 +1,6 @@
-import Avatar from './Avatar'
-import Date from './Date'
-import CoverImage from './CoverImage'
+import Avatar from '../../generic/Avatar'
+import Date from '../../generic/Date'
+import CoverImage from '../../generic/CoverImage'
 import Link from 'next/link'
 
 export default function PostPreview({ title, coverImage, date, author, slug }) {

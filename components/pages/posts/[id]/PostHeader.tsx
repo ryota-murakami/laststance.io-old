@@ -1,8 +1,8 @@
-import Avatar from './Avatar'
-import Date from './Date'
-import CoverImage from './CoverImage'
-import PostTitle from './PostTitle'
-import { Post } from '../DataStructure'
+import Avatar from '../../../generic/Avatar'
+import Date from '../../../generic/Date'
+import CoverImage from '../../../generic/CoverImage'
+import PostTitle from '../PostTitle'
+import { Post } from '../../../../DataStructure'
 
 interface Props {
   title: Post['title']
