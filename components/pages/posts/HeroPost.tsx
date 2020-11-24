@@ -7,7 +7,7 @@ import { Post } from '../../../DataStructure'
 
 interface Props {
   title: Post['title']
-  coverImage: Post['coverImage']
+  coverImageUrl: Post['coverImageUrl']
   date: Post['date']
   author: Post['author']
   slug: Post['slug']
@@ -15,7 +15,7 @@ interface Props {
 
 const HeroPost: React.FC<Props> = ({
   title,
-  coverImage,
+  coverImageUrl,
   date,
   author,
   slug,
@@ -23,7 +23,7 @@ const HeroPost: React.FC<Props> = ({
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage slug={slug} title={title} url={coverImage} />
+        <CoverImage slug={slug} title={title} coverImageUrl={coverImageUrl} />
       </div>
       <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
         <div>

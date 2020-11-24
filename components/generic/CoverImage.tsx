@@ -6,11 +6,11 @@ import { Post } from '../../DataStructure'
 
 interface Props {
   title: Post['title']
-  url: Post['coverImage']
+  coverImageUrl: Post['coverImageUrl']
   slug: Post['slug']
 }
 
-const CoverImage: React.FC<Props> = ({ title, url, slug }) => {
+const CoverImage: React.FC<Props> = ({ title, coverImageUrl, slug }) => {
   const image = (
     <img
       width={2000}
@@ -19,7 +19,7 @@ const CoverImage: React.FC<Props> = ({ title, url, slug }) => {
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
-      src={imageBuilder.image(url).height(1000).width(2000).url()}
+      src={imageBuilder.image(coverImageUrl).height(1000).width(2000).url()}
     />
   )
 

@@ -49,8 +49,8 @@ export default createSchema({
           of: [{ type: 'block' }],
         },
         {
-          name: 'coverImage',
-          title: 'Cover Image',
+          name: 'coverImageUrl',
+          title: 'Cover Image URL',
           type: 'image',
         },
         {

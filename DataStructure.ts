@@ -6,7 +6,7 @@ export interface Author {
 export interface Post {
   title: string
   content: string
-  coverImage: string
+  coverImageUrl: string
   date: string
   slug: string
   author: Author

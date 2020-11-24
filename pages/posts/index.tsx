@@ -20,7 +20,7 @@ const IndexPage: React.FC<Props> = ({ allPosts, preview }) => {
       {heroPost && (
         <HeroPost
           title={heroPost.title}
-          coverImage={heroPost.coverImage}
+          coverImageUrl={heroPost.coverImageUrl}
           date={heroPost.date}
           author={heroPost.author}
           slug={heroPost.slug}

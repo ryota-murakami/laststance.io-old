@@ -40,7 +40,7 @@ const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
             </Head>
             <PostHeader
               title={post.title}
-              coverImage={post.coverImage}
+              coverImageUrl={post.coverImageUrl}
               date={post.date}
               author={post.author}
               slug={post.slug}
