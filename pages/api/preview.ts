@@ -1,6 +1,12 @@
 import { getPreviewPostBySlug } from '../../lib/api'
+import { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function preview(req, res) {
+// @Todo I don't know correct return type at the time.
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export default async function preview(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   // Check the secret and next parameters
   // This secret should only be known to this API route and the CMS
   if (
