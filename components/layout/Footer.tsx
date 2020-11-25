@@ -8,7 +8,8 @@ const Footer: React.FC = () => {
         <div className="py-8 flex flex-col lg:flex-row items-center">
           <div className="flex flex-row lg:pl-4 lg:w-1/2">
             <div className="self-start">
-              Copyright © 2020 Laststance.io All rights reserved.
+              Copyright © {new Date().getFullYear()} Laststance.io All rights
+              reserved.
             </div>
           </div>
         </div>
