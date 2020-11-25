@@ -11,6 +11,7 @@ interface Props {
 }
 
 const CoverImage: React.FC<Props> = ({ title, coverImageUrl, slug }) => {
+  console.log(coverImageUrl)
   const image = (
     <img
       width={2000}
