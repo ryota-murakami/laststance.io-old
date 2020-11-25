@@ -1,4 +1,5 @@
 import client, { previewClient } from './sanity'
+import { AllPosts, MorePosts, Post } from '../DataStructure'
 
 const getUniquePosts = (posts) => {
   const slugs = new Set()
@@ -17,13 +18,13 @@ const postFields = `
   title,
   date,
   'slug': slug.current,
-  'coverImage': coverImage.asset->url,
+  'coverImageUrl': coverImageUrl.asset->url,
   'author': author->{name, 'picture': picture.asset->url},
 `
 
 const getClient = (preview) => (preview ? previewClient : client)
 
-export async function getPreviewPostBySlug(slug) {
+export async function getPreviewPostBySlug(slug: Post['slug']): Promise<Post> {
   const data = await getClient(true).fetch(
     `*[_type == "post" && slug.current == $slug] | order(date desc){
       ${postFields}
@@ -34,12 +35,12 @@ export async function getPreviewPostBySlug(slug) {
   return data[0]
 }
 
-export async function getAllPostsWithSlug() {
+export async function getAllPostsWithSlug(): Promise<AllPosts> {
   const data = await client.fetch(`*[_type == "post"]{ 'slug': slug.current }`)
   return data
 }
 
-export async function getAllPostsForHome(preview) {
+export async function getAllPostsForHome(preview: boolean): Promise<AllPosts> {
   const results = await getClient(preview)
     .fetch(`*[_type == "post"] | order(date desc, _updatedAt desc){
       ${postFields}
@@ -47,7 +48,10 @@ export async function getAllPostsForHome(preview) {
   return getUniquePosts(results)
 }
 
-export async function getPostAndMorePosts(slug, preview) {
+export async function getPostAndMorePosts(
+  slug: Post['slug'],
+  preview: boolean
+): Promise<{ post: Post; morePosts: MorePosts }> {
   const curClient = getClient(preview)
   const [post, morePosts] = await Promise.all([
     curClient
