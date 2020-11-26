@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Container from '../generic/Container'
 import React from 'react'
 
@@ -21,7 +22,11 @@ const Header: React.FC<Props> = ({ preview }) => {
             to exit preview mode.
           </div>
         ) : (
-          <div className="flex py-2"></div>
+          <div className="flex flex-row-reverse py-2">
+            <Link href="/posts">
+              <a>Blog</a>
+            </Link>
+          </div>
         )}
       </Container>
     </div>
