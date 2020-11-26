@@ -1,15 +1,25 @@
-import Avatar from '../../generic/Avatar'
+import React from 'react'
+import { Avatar } from '../../generic/Avatar'
 import Date from '../../generic/Date'
 import CoverImage from '../../generic/CoverImage'
 import Link from 'next/link'
+import { Author, Post } from '../../../DataStructure'
 
-export default function PostPreview({
+interface Props {
+  title: Post['title']
+  coverImageUrl?: Post['coverImageUrl']
+  date: Post['date']
+  slug: Post['slug']
+  author: Author
+}
+
+const PostPreview: React.FC<Props> = ({
   title,
   coverImageUrl,
   date,
-  author,
   slug,
-}) {
+  author,
+}) => {
   return (
     <div>
       <div className="mb-5">
@@ -27,3 +37,5 @@ export default function PostPreview({
     </div>
   )
 }
+
+export default PostPreview

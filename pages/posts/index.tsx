@@ -3,15 +3,15 @@ import MoreStories from '../../components/pages/posts/MoreStories'
 import HeroPost from '../../components/pages/posts/HeroPost'
 import Intro from '../../components/pages/posts/Intro'
 import { getAllPostsForHome } from '../../lib/api'
-import { GetStaticProps } from 'next'
-import { AllPosts } from '../../DataStructure'
+import { GetStaticProps, GetStaticPropsContext } from 'next'
+import { Posts, Post } from '../../DataStructure'
 
 interface Props {
-  allPosts: AllPosts
-  preview: boolean
+  allPosts: Posts
+  preview?: GetStaticPropsContext['preview']
 }
 
-const IndexPage: React.FC<Props> = ({ allPosts, preview }) => {
+const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
@@ -31,9 +31,13 @@ const IndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   )
 }
 
-export default IndexPage
+export default PostsIndexPage
 
-export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
+type StaticProps = GetStaticPropsContext<Pick<Post, 'slug'>>
+
+export const getStaticProps: GetStaticProps<StaticProps> = async ({
+  preview = false,
+}) => {
   const allPosts = await getAllPostsForHome(preview)
   return {
     props: { allPosts, preview },

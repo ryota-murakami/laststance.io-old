@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 interface Props {
-  preview: boolean
+  preview?: GetStaticPropsContext['preview']
 }
 
 export const Layout: React.FC<Props> = ({ preview, children }) => {

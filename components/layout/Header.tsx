@@ -3,7 +3,7 @@ import Container from '../generic/Container'
 import React from 'react'
 
 interface Props {
-  preview: boolean
+  preview?: GetStaticPropsContext['preview']
 }
 
 const Header: React.FC<Props> = ({ preview }) => {

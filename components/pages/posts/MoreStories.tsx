@@ -1,9 +1,9 @@
 import PostPreview from './PostPreview'
 import React from 'react'
-import { MorePosts } from '../../../DataStructure'
+import { Posts } from '../../../DataStructure'
 
 interface Props {
-  posts: MorePosts
+  posts: Posts
 }
 
 const MoreStories: React.FC<Props> = ({ posts }) => {

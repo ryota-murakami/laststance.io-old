@@ -17,6 +17,7 @@ export default async function preview(
   }
 
   // Fetch the headless CMS to check if the provided `slug` exists
+  // @ts-ignore @TODO I don't know how resolve this at the time
   const post = await getPreviewPostBySlug(req.query.slug)
 
   // If the slug doesn't exist prevent preview mode from being enabled

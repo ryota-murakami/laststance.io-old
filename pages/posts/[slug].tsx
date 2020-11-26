@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
 import ErrorPage from 'next/error'
 import Container from '../../components/generic/Container'
 import PostBody from '../../components/pages/posts/[id]/PostBody'
@@ -10,15 +10,15 @@ import SectionSeparator from '../../components/generic/SectionSeparator'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/pages/posts/PostTitle'
 import Head from 'next/head'
-import { MorePosts, Post } from '../../DataStructure'
+import { Posts, Post } from '../../DataStructure'
 
 interface Props {
   post: Post
-  morePosts: MorePosts
-  preview: boolean
+  morePosts: Posts
+  preview?: GetStaticPropsContext['preview']
 }
 
-const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
+const PostPage: React.FC<Props> = ({ post, morePosts, preview }) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -55,12 +55,13 @@ const Posts: React.FC<Props> = ({ post, morePosts, preview }) => {
   )
 }
 
-export default Posts
+export default PostPage
 
 export const getStaticProps: GetStaticProps = async ({
   params,
   preview = false,
 }) => {
+  // @ts-ignore @TODO I don't know how resove this at the time
   const data = await getPostAndMorePosts(params.slug, preview)
   return {
     props: {

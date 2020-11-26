@@ -12,6 +12,4 @@ export interface Post {
   author: Author
 }
 
-export type AllPosts = Post[]
-
-export type MorePosts = Post[]
+export type Posts = Post[]
