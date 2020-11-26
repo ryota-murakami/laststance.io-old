@@ -6,12 +6,12 @@ import { Layout } from '../components/layout/Layout'
 
 // @Todo Create control frow pass preview={preview} Component if Component was Posts,[slug].tsx
 const MyApp: React.FC<AppProps> = (props) => {
-  const Component = props.Component
+  const PageComponent = props.Component
   return (
     <>
       <HeadMeta />
       <Layout preview={props.pageProps.preview}>
-        <Component {...props.pageProps} />
+        <PageComponent {...props.pageProps} />
       </Layout>
     </>
   )
