@@ -13,7 +13,7 @@ interface Props {
   slug: Post['slug']
 }
 
-const HeroPost: React.FC<Props> = ({
+export const HeroPost: React.FC<Props> = ({
   title,
   coverImageUrl,
   date,
@@ -43,5 +43,3 @@ const HeroPost: React.FC<Props> = ({
     </section>
   )
 }
-
-export default HeroPost

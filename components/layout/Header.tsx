@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import Container from '../generic/Container'
+import { Main } from '../generic/Main'
 import React from 'react'
+import { GetStaticPropsContext } from 'next'
 
 interface Props {
   preview?: GetStaticPropsContext['preview']
@@ -9,7 +10,7 @@ interface Props {
 const Header: React.FC<Props> = ({ preview }) => {
   return (
     <div className="border-b py-2">
-      <Container>
+      <Main>
         {preview ? (
           <div className="py-2 text-center text-sm">
             This page is a preview.{' '}
@@ -28,7 +29,7 @@ const Header: React.FC<Props> = ({ preview }) => {
             </Link>
           </div>
         )}
-      </Container>
+      </Main>
     </div>
   )
 }

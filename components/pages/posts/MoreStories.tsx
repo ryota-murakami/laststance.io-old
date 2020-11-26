@@ -6,7 +6,7 @@ interface Props {
   posts: Posts
 }
 
-const MoreStories: React.FC<Props> = ({ posts }) => {
+export const MoreStories: React.FC<Props> = ({ posts }) => {
   return (
     <section>
       <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
@@ -27,5 +27,3 @@ const MoreStories: React.FC<Props> = ({ posts }) => {
     </section>
   )
 }
-
-export default MoreStories

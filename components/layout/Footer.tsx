@@ -1,10 +1,10 @@
-import Container from '../generic/Container'
+import { Main } from '../generic/Main'
 import React from 'react'
 
-const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="border-t border-accent-2">
-      <Container>
+      <Main>
         <div className="py-8 flex flex-col lg:flex-row items-center">
           <div className="flex flex-row lg:pl-4 lg:w-1/2">
             <div className="self-start">
@@ -13,9 +13,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </Main>
     </footer>
   )
 }
-
-export default Footer

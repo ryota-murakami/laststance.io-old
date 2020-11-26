@@ -1,7 +1,7 @@
-import Container from '../../components/generic/Container'
-import MoreStories from '../../components/pages/posts/MoreStories'
-import HeroPost from '../../components/pages/posts/HeroPost'
-import Intro from '../../components/generic/Intro'
+import { Main } from '../../components/generic/Main'
+import { MoreStories } from '../../components/pages/posts/MoreStories'
+import { HeroPost } from '../../components/pages/posts/HeroPost'
+import { Intro } from '../../components/generic/Intro'
 import { getAllPostsForHome } from '../../lib/api'
 import { GetStaticProps, GetStaticPropsContext } from 'next'
 import { Posts, Post } from '../../DataStructure'
@@ -15,7 +15,7 @@ const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
-    <Container>
+    <Main>
       <Intro />
       {heroPost && (
         <HeroPost
@@ -27,7 +27,7 @@ const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
         />
       )}
       {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-    </Container>
+    </Main>
   )
 }
 
