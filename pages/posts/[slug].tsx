@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
 import ErrorPage from 'next/error'
-import Main from '../../components/generic/Main'
+import { Container } from '../../components/generic/Container'
 import PostBody from '../../components/pages/posts/[id]/PostBody'
-import MoreStories from '../../components/pages/posts/MoreStories'
+import { MoreStories } from '../../components/pages/posts/MoreStories'
 import LeftUpperWebSiteNameLink from '../../components/pages/posts/[id]/LeftUpperWebSiteNameLink'
 import PostHeader from '../../components/pages/posts/[id]/PostHeader'
 import SectionSeparator from '../../components/generic/SectionSeparator'
@@ -21,10 +21,10 @@ interface Props {
 const PostPage: React.FC<Props> = ({ post, morePosts, preview }) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage bage statusCode={404} />
   }
   return (
-    <Main>
+    <Container>
       <LeftUpperWebSiteNameLink />
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
@@ -51,7 +51,7 @@ const PostPage: React.FC<Props> = ({ post, morePosts, preview }) => {
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </>
       )}
-    </Main>
+    </Container>
   )
 }
 

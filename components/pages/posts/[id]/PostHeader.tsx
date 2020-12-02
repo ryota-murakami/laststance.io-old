@@ -1,4 +1,4 @@
-import Avatar from '../../../generic/Avatar'
+import { Avatar } from '../../../generic/Avatar'
 import Date from '../../../generic/Date'
 import CoverImage from '../../../generic/CoverImage'
 import PostTitle from '../PostTitle'

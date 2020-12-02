@@ -2,17 +2,21 @@ import { AppProps } from 'next/app'
 import '../styles/index.css'
 import HeadMeta from '../components/layout/HeadMeta'
 import React from 'react'
-import { Layout } from '../components/layout/Layout'
+import Header from '../components/layout/Header'
+import { Footer } from '../components/layout/Footer'
 
-// @Todo Create control frow pass preview={preview} Component if Component was Posts,[slug].tsx
 const MyApp: React.FC<AppProps> = (props) => {
   const PageComponent = props.Component
   return (
     <>
       <HeadMeta />
-      <Layout preview={props.pageProps.preview}>
-        <PageComponent {...props.pageProps} />
-      </Layout>
+      <div className="min-h-screen">
+        <Header preview={props.pageProps.preview} />
+        <main className="w-screen h-screen lg:container m-auto">
+          <PageComponent {...props.pageProps} />
+        </main>
+      </div>
+      <Footer />
     </>
   )
 }
