@@ -21,9 +21,15 @@ export const HeroPost: React.FC<Props> = ({
   slug,
 }) => {
   return (
-    <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage slug={slug} title={title} coverImageUrl={coverImageUrl} />
+    <section className="mx-auto">
+      <div className="my-8 mx-auto">
+        <CoverImage
+          width={1000}
+          height={700}
+          slug={slug}
+          title={title}
+          coverImageUrl={coverImageUrl}
+        />
       </div>
       <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
         <div>

@@ -14,7 +14,7 @@ const PostsIndex: React.FC<Props> = ({ allPosts, preview }) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
-    <div>
+    <div className="m-auto">
       {heroPost && (
         <HeroPost
           title={heroPost.title}

@@ -1,9 +1,8 @@
 import { useRouter } from 'next/router'
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
 import ErrorPage from 'next/error'
-import PostBody from '../../components/pages/posts/[id]/PostBody'
+import { PostBody } from '../../components/pages/posts/[id]/PostBody'
 import { MoreStories } from '../../components/pages/posts/MoreStories'
-import LeftUpperWebSiteNameLink from '../../components/pages/posts/[id]/LeftUpperWebSiteNameLink'
 import PostHeader from '../../components/pages/posts/[id]/PostHeader'
 import SectionSeparator from '../../components/generic/SectionSeparator'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
@@ -24,7 +23,6 @@ const PostPage: React.FC<Props> = ({ post, morePosts, preview }) => {
   }
   return (
     <div>
-      <LeftUpperWebSiteNameLink />
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (

@@ -5,26 +5,34 @@ import { imageBuilder } from '../../lib/sanity'
 import { Post } from '../../DataStructure'
 
 interface Props {
+  width: number
+  height: number
   title: Post['title']
   coverImageUrl: Post['coverImageUrl']
   slug: Post['slug']
 }
 
-const CoverImage: React.FC<Props> = ({ title, coverImageUrl, slug }) => {
+const CoverImage: React.FC<Props> = ({
+  width,
+  height,
+  title,
+  coverImageUrl,
+  slug,
+}) => {
   const image = (
     <img
-      width={2000}
-      height={1000}
+      width={width}
+      height={height}
       alt={title}
-      className={cn('shadow-small', {
+      className={cn('shadow-small', 'mx-auto', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
-      src={imageBuilder.image(coverImageUrl).height(1000).width(2000).url()}
+      src={imageBuilder.image(coverImageUrl).height(height).width(width).url()}
     />
   )
 
   return (
-    <div className="sm:mx-0">
+    <div className="mx-auto">
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>{image}</a>

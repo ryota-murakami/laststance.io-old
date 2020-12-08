@@ -21,9 +21,15 @@ const PostPreview: React.FC<Props> = ({
   author,
 }) => {
   return (
-    <div>
+    <div className="mx-auto">
       <div className="mb-5">
-        <CoverImage slug={slug} title={title} coverImageUrl={coverImageUrl} />
+        <CoverImage
+          width={600}
+          height={500}
+          slug={slug}
+          title={title}
+          coverImageUrl={coverImageUrl}
+        />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
