@@ -1,26 +1,22 @@
 import React from 'react'
-import { Container } from '../components/layout/Container'
 
 const Index: React.FC = () => {
   return (
-    <Container>
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
-              Pricing
-            </h2>
-            <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Take control of your team.
-            </p>
-            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-              Start building for free, then add a site plan to go live. Account
-              plans unlock additional features.
-            </p>
-          </div>
+    <div className="h-auto">
+      <div className="w-full mx-auto py-16">
+        <div className="text-center">
+          <h2 className="text-4xl font-semibold text-indigo-600 tracking-wide uppercase">
+            Comming Soon
+          </h2>
+          <p className="mt-10 text-9xl font-extrabold text-gray-900">
+            Laststance.io
+          </p>
+          <p className="max-w-xl mt-10 mx-auto text-5xl text-gray-500">
+            Laststance.io is indipendent organization for OSS activity.
+          </p>
         </div>
       </div>
-    </Container>
+    </div>
   )
 }
 

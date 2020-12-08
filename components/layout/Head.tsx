@@ -1,9 +1,9 @@
 import React from 'react'
-import Head from 'next/head'
+import NextHead from 'next/head'
 import { HOME_OG_IMAGE_URL } from '../../lib/constants'
 
-const HeadMeta: React.FC = () => (
-  <Head>
+const Head: React.FC = () => (
+  <NextHead>
     <title>Laststance.io</title>
     <link
       rel="apple-touch-icon"
@@ -38,7 +38,7 @@ const HeadMeta: React.FC = () => (
       content="Laststance.io is indipendent organization for OSS activity."
     />
     <meta property="og:image" content={HOME_OG_IMAGE_URL} />
-  </Head>
+  </NextHead>
 )
 
-export default HeadMeta
+export default Head

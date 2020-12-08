@@ -1,4 +1,3 @@
-import { Container } from '../../components/layout/Container'
 import { MoreStories } from '../../components/pages/posts/MoreStories'
 import { HeroPost } from '../../components/pages/posts/HeroPost'
 import { getAllPostsForHome } from '../../lib/api'
@@ -14,7 +13,7 @@ const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
-    <Container>
+    <div>
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -25,7 +24,7 @@ const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
         />
       )}
       {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-    </Container>
+    </div>
   )
 }
 
