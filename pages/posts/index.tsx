@@ -1,3 +1,4 @@
+import React from 'react'
 import { MoreStories } from '../../components/pages/posts/MoreStories'
 import { HeroPost } from '../../components/pages/posts/HeroPost'
 import { getAllPostsForHome } from '../../lib/api'
@@ -9,7 +10,7 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
+const PostsIndex: React.FC<Props> = ({ allPosts, preview }) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
@@ -28,7 +29,7 @@ const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   )
 }
 
-export default PostsIndexPage
+export default PostsIndex
 
 type StaticProps = GetStaticPropsContext<Pick<Post, 'slug'>>
 
