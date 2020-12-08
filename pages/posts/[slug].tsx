@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
 import ErrorPage from 'next/error'
-import { Container } from '../../components/generic/Container'
+import { Container } from '../../components/layout/Container'
 import PostBody from '../../components/pages/posts/[id]/PostBody'
 import { MoreStories } from '../../components/pages/posts/MoreStories'
 import LeftUpperWebSiteNameLink from '../../components/pages/posts/[id]/LeftUpperWebSiteNameLink'

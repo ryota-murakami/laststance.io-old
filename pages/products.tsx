@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About: React.FC = () => {
+const Products: React.FC = () => {
   return (
     <section className="container flex flex-col items-center justify-center m-auto h-screen">
       <h1 className="text-4xl">Comming soon...</h1>
@@ -8,4 +8,4 @@ const About: React.FC = () => {
   )
 }
 
-export default About
+export default Products

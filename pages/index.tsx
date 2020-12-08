@@ -1,28 +1,27 @@
 import React from 'react'
-import { Container } from '../components/generic/Container'
-import { Intro } from '../components/generic/Intro'
+import { Container } from '../components/layout/Container'
 
-const IndexPage: React.FC = () => {
+const Index: React.FC = () => {
   return (
     <Container>
-      <Intro />
-      <div className="rounded-t-xl overflow-hidden bg-gradient-to-r from-purple-50 to-purple-100 p-10">
-        <form className="flex w-full max-w-sm mx-auto space-x-3">
-          <input
-            className="flex-1 h-full appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-            type="email"
-            placeholder="Your email"
-          />
-          <button
-            className="flex-shrink-0 bg-purple-600 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200"
-            type="button"
-          >
-            Sign up
-          </button>
-        </form>
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
+              Pricing
+            </h2>
+            <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Take control of your team.
+            </p>
+            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+              Start building for free, then add a site plan to go live. Account
+              plans unlock additional features.
+            </p>
+          </div>
+        </div>
       </div>
     </Container>
   )
 }
 
-export default IndexPage
+export default Index

@@ -1,4 +1,4 @@
-import { Container } from '../generic/Container'
+import { Container } from './Container'
 import React from 'react'
 
 export const Footer: React.FC = () => {

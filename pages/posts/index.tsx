@@ -1,7 +1,6 @@
-import { Container } from '../../components/generic/Container'
+import { Container } from '../../components/layout/Container'
 import { MoreStories } from '../../components/pages/posts/MoreStories'
 import { HeroPost } from '../../components/pages/posts/HeroPost'
-import { Intro } from '../../components/generic/Intro'
 import { getAllPostsForHome } from '../../lib/api'
 import { GetStaticProps, GetStaticPropsContext } from 'next'
 import { Posts, Post } from '../../DataStructure'
@@ -16,7 +15,6 @@ const PostsIndexPage: React.FC<Props> = ({ allPosts, preview }) => {
   const morePosts = allPosts.slice(1)
   return (
     <Container>
-      <Intro />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
