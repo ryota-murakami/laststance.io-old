@@ -22,23 +22,24 @@ const Header: React.FC<Props> = ({ preview }) => {
             </div>
             <section className="flex flex-row-reverse items-end">
               <div className="px-4">
+                {/* @ts-ignore */}
                 <Link href="/posts">
-                  <a>Blog</a>
+                  <a className="hover:text-gray-400">Blog</a>
                 </Link>
               </div>
               <div className="px-4">
                 <Link href="/about">
-                  <a>About</a>
+                  <a className="hover:text-gray-400">About</a>
                 </Link>
               </div>
               <div className="px-4">
                 <Link href="/activity">
-                  <a>Activity</a>
+                  <a className="hover:text-gray-400">Activity</a>
                 </Link>
               </div>
               <div className="px-4">
                 <Link href="/products">
-                  <a>Products</a>
+                  <a className="hover:text-gray-400">Products</a>
                 </Link>
               </div>
             </section>
