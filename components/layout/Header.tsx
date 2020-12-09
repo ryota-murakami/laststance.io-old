@@ -20,7 +20,7 @@ const Header: React.FC<Props> = ({ preview }) => {
                 </Link>
               </h1>
             </div>
-            <aside className="flex flex-row-reverse items-end">
+            <section className="flex flex-row-reverse items-end">
               <div className="px-4">
                 <Link href="/posts">
                   <a>Blog</a>
@@ -41,7 +41,7 @@ const Header: React.FC<Props> = ({ preview }) => {
                   <a>Products</a>
                 </Link>
               </div>
-            </aside>
+            </section>
           </section>
           )                                                        /* eslint-disable-line prettier/prettier */
         }                                                         {/* eslint-disable-line prettier/prettier */}
