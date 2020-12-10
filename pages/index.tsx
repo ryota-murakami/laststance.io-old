@@ -8,7 +8,7 @@ const Index: React.FC = () => {
           <h2 className="text-4xl font-semibold text-indigo-600 tracking-wide uppercase">
             Comming Soon
           </h2>
-          <p className="mt-10 text-9xl font-extrabold text-gray-900">
+          <p className="mt-10 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-gray-900">
             Laststance.io
           </p>
           <p className="max-w-xl mt-10 mx-auto text-5xl text-gray-500">

@@ -9,7 +9,7 @@ interface Props {
 
 const Header: React.FC<Props> = ({ preview }) => {
   return (
-    <header className="w-full h-12 box-border border-b px-40">
+    <header className="w-full h-16 box-border border-b px-40">
         {preview ? (<Preview />) :                                  /* eslint-disable-line prettier/prettier */
           (                                                         /* eslint-disable-line prettier/prettier */
           <section className="flex flex-row justify-between h-full py-2">
