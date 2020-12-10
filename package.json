@@ -8,8 +8,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
     "typecheck": "tsc --noEmit",
-    "analyze": "ANALYZE=true next build",
-    "docz": "docz dev"
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "2.0.7",
