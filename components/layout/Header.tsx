@@ -9,35 +9,34 @@ interface Props {
 
 const Header: React.FC<Props> = ({ preview }) => {
   return (
-    <header className="w-full h-16 box-border border-b px-40">
+    <header className="h-16 box-border border-b w-screen">
         {preview ? (<Preview />) :                                  /* eslint-disable-line prettier/prettier */
           (                                                         /* eslint-disable-line prettier/prettier */
-          <section className="flex flex-row justify-between h-full py-2">
-            <div>
-              <h1 className="text-3xl font-bold tracking-tighter leading-tight">
-                <Link href="/">
-                  <a>Laststance.io</a>
-                </Link>
-              </h1>
+          <section className="container h-full flex flex-row justify-between py-2 px-2 m-auto">
+            <div className="flex items-center">
+              <Link href="/">
+                <a className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold tracking-tighter leading-tight">
+                  Laststance.io
+                </a>
+              </Link>
             </div>
-            <section className="flex flex-row-reverse items-end">
-              <div className="px-4">
-                {/* @ts-ignore */}
+            <section className="flex flex-row-reverse items-end flex-wrap items-center">
+              <div className="px-1 sm:px-4 md:px-4 lg:px-4">
                 <Link href="/posts">
                   <a className="hover:text-gray-400">Blog</a>
                 </Link>
               </div>
-              <div className="px-4">
+              <div className="px-1 sm:px-4 md:px-4 lg:px-4">
                 <Link href="/about">
                   <a className="hover:text-gray-400">About</a>
                 </Link>
               </div>
-              <div className="px-4">
+              <div className="px-1 sm:px-4 md:px-4 lg:px-4">
                 <Link href="/activity">
                   <a className="hover:text-gray-400">Activity</a>
                 </Link>
               </div>
-              <div className="px-4">
+              <div className="px-1 sm:px-4 md:px-4 lg:px-4">
                 <Link href="/products">
                   <a className="hover:text-gray-400">Products</a>
                 </Link>
