@@ -11,7 +11,7 @@ const Index: React.FC = () => {
           <p className="mt-10 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-gray-900">
             Laststance.io
           </p>
-          <p className="max-w-xl mt-10 mx-auto text-3xl sm:text-5xl md:text-5xl lg:text-5xl text-gray-500">
+          <p className="max-w-xl mt-10 mx-auto text-2xl sm:text-5xl md:text-5xl lg:text-5xl text-gray-500">
             Laststance.io is indipendent organization for OSS activity.
           </p>
         </div>
