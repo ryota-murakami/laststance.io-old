@@ -10,9 +10,9 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostsIndex: React.FC<Props> = ({ allPosts, preview }) => {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+const PostsPage: React.FC<Props> = ({ allPosts, preview }) => {
+  const heroPost: Post = allPosts[0]
+  const morePosts: Posts = allPosts.slice(1)
   return (
     <div className="m-auto">
       {heroPost && (
@@ -29,14 +29,14 @@ const PostsIndex: React.FC<Props> = ({ allPosts, preview }) => {
   )
 }
 
-export default PostsIndex
+export default PostsPage
 
 type StaticProps = GetStaticPropsContext<Pick<Post, 'slug'>>
 
 export const getStaticProps: GetStaticProps<StaticProps> = async ({
   preview = false,
 }) => {
-  const allPosts = await getAllPostsForHome(preview)
+  const allPosts: Posts = await getAllPostsForHome(preview)
   return {
     props: { allPosts, preview },
   }
