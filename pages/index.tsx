@@ -6,7 +6,7 @@ const Index: React.FC = () => {
       <div className="w-full mx-auto py-16">
         <div className="text-center">
           <h2 className="text-4xl font-semibold text-indigo-600 tracking-wide uppercase">
-            Comming Soon
+            What is the Web Browser?
           </h2>
           <p className="mt-10 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-gray-900">
             Laststance.io
