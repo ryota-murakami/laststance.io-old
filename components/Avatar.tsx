@@ -1,5 +1,5 @@
 import React from 'react'
-import { Author } from '../../DataStructure'
+import { Author } from '../DataStructure'
 
 interface Props {
   name: Author['name']

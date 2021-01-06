@@ -1,6 +1,6 @@
 import React from 'react'
 import { parseISO, format } from 'date-fns'
-import { Post } from '../../DataStructure'
+import { Post } from '../DataStructure'
 
 interface Props {
   dateString: Post['date']
