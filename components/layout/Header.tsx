@@ -44,7 +44,7 @@ const Header: React.FC<Props> = ({ preview }) => {
           </div>
           <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
             <Link href="/products">
-              <a className="hover:text-gray-400">Prod</a>
+              <a className="hover:text-gray-400">Repo</a>
             </Link>
           </div>
         </section>

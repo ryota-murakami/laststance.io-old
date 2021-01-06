@@ -12,7 +12,7 @@ const MyApp: React.FC<AppProps> = (props) => {
       <Head />
       <div className="min-h-screen flex flex-col justify-between items-center">
         <Header preview={props.pageProps.preview} />
-        <main className="container m-auto">
+        <main className="container m-auto max-w-5xl">
           <PageComponent {...props.pageProps} />
         </main>
         <Footer />
