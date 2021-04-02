@@ -14,7 +14,7 @@
     "@sanity/block-content-to-react": "2.0.7",
     "@sanity/client": "2.2.6",
     "@sanity/image-url": "0.140.22",
-    "classnames": "2.2.6",
+    "classnames": "2.3.0",
     "date-fns": "2.19.0",
     "next": "^10.0.9",
     "react": "^17.0.2",
