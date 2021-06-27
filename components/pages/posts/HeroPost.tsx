@@ -1,7 +1,6 @@
 import React from 'react'
 import { Avatar } from '../../Avatar'
 import Date from '../../Date'
-import CoverImage from '../../CoverImage'
 import Link from 'next/link'
 import { Post } from '../../../DataStructure'
 
@@ -13,23 +12,17 @@ interface Props {
   slug: Post['slug']
 }
 
-export const HeroPost: React.FC<Props> = ({
-  title,
-  coverImageUrl,
-  date,
-  author,
-  slug,
-}) => {
+export const HeroPost: React.FC<Props> = ({ title, date, author, slug }) => {
   return (
     <section className="mx-auto">
       <div className="my-8 mx-auto">
-        <CoverImage
-          width={1000}
-          height={700}
-          slug={slug}
-          title={title}
-          coverImageUrl={coverImageUrl}
-        />
+        {/*<CoverImage*/}
+        {/*  width={1000}*/}
+        {/*  height={700}*/}
+        {/*  slug={slug}*/}
+        {/*  title={title}*/}
+        {/*  coverImageUrl={coverImageUrl}*/}
+        {/*/>*/}
       </div>
       <div className="pl-4 pr-4 mb-20 md:mb-28 md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8">
         <div>
