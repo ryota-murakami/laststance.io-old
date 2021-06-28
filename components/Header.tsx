@@ -32,11 +32,6 @@ const Header: React.FC<Props> = ({ preview }) => {
               <a className="hover:text-gray-400">Blog</a>
             </Link>
           </div>
-          {/*<div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">*/}
-          {/*  <Link href="/activity">*/}
-          {/*    <a className="hover:text-gray-400">Activity</a>*/}
-          {/*  </Link>*/}
-          {/*</div>*/}
           <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
             <a
               className="hover:text-gray-400"
@@ -44,12 +39,17 @@ const Header: React.FC<Props> = ({ preview }) => {
               target="_blank"
               rel="noreferrer"
             >
-              TIL
+              Today I Learned
             </a>
           </div>
           <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
             <Link href="/activity">
               <a className="hover:text-gray-400">Activity</a>
+            </Link>
+          </div>
+          <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
+            <Link href="/project">
+              <a className="hover:text-gray-400">Project</a>
             </Link>
           </div>
           <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">

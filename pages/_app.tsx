@@ -10,9 +10,9 @@ const MyApp: React.FC<AppProps> = (props) => {
   return (
     <>
       <Head />
-      <div className="min-h-screen flex flex-col justify-between items-center">
+      <div className="min-h-screen flex flex-col justify-between">
         <Header preview={props.pageProps.preview} />
-        <main className="container m-auto max-w-5xl">
+        <main className="container max-w-5xl mx-auto flex-grow">
           <PageComponent {...props.pageProps} />
         </main>
         <Footer />

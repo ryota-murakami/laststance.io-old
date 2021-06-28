@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Repo: React.FC = () => {
+const Project: React.FC = () => {
   return (
     <section className="container flex flex-col items-center justify-center m-auto h-screen">
       <h1 className="text-4xl">Comming soon...</h1>
@@ -8,4 +8,4 @@ const Repo: React.FC = () => {
   )
 }
 
-export default Repo
+export default Project
