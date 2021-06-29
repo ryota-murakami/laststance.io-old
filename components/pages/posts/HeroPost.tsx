@@ -16,6 +16,7 @@ export const HeroPost: React.FC<Props> = ({ title, date, author, slug }) => {
   return (
     <section className="mx-auto">
       <div className="my-8 mx-auto">
+        {/* @TODO Currently Disable show CoverImage. */}
         {/*<CoverImage*/}
         {/*  width={1000}*/}
         {/*  height={700}*/}
