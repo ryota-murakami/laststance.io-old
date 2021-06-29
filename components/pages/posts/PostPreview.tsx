@@ -1,7 +1,7 @@
 import React from 'react'
-import { Avatar } from '../../Avatar'
-import Date from '../../Date'
-import CoverImage from '../../CoverImage'
+import { Avatar } from '../../elements/Avatar'
+import Date from '../../elements/Date'
+import CoverImage from '../../elements/CoverImage'
 import Link from 'next/link'
 import { Author, Post } from '../../../DataStructure'
 

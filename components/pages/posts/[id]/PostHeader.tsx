@@ -1,5 +1,5 @@
-import { Avatar } from '../../../Avatar'
-import Date from '../../../Date'
+import { Avatar } from '../../../elements/Avatar'
+import Date from '../../../elements/Date'
 import PostTitle from '../PostTitle'
 import { Post } from '../../../../DataStructure'
 

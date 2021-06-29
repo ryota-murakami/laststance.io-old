@@ -1,6 +1,6 @@
 import React from 'react'
-import { Avatar } from '../../Avatar'
-import Date from '../../Date'
+import { Avatar } from '../../elements/Avatar'
+import Date from '../../elements/Date'
 import Link from 'next/link'
 import { Post } from '../../../DataStructure'
 

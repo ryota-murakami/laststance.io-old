@@ -1,8 +1,8 @@
 import React from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
-import { imageBuilder } from '../lib/sanity'
-import { Post } from '../DataStructure'
+import { imageBuilder } from '../../lib/sanity'
+import { Post } from '../../DataStructure'
 
 interface Props {
   width: number
