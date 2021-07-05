@@ -18,18 +18,20 @@ const About: React.FC = () => {
           .
         </div>
 
-        <div className="mt4">
-          Yes I created organization alone, that little bit odd.
-          <br />
-          Initial motivation is I want to put prefix @laststance/foopkg
-        </div>
-
         <div className="mt-4">
           Basically to do something following concepts.
         </div>
 
         <ul className="mt-4 list-disc">
-          <li>Fullfill gap between OSS library and Production App.</li>
+          <li>
+            {' '}
+            We prefer show example app of any mainstream React/JavaScript
+            technology for developers who trying to build a Real World App
+          </li>
+          <li>
+            We prefer building with fully OSS technology stack rathar than using
+            heavy PaSS like Firebase.
+          </li>
           <li>
             Digging to know everything when I have interest without a particular
             job description.
@@ -38,13 +40,6 @@ const About: React.FC = () => {
             Join core of OSS that crucial thing future of web and health of web.
           </li>
         </ul>
-
-        <div className="mt-4">
-          We prefer show example of any mainstream React/JavaScript technology
-          for developers who trying to build a Real World App like Youtube,
-          Instagram, Twitter, Facebook etc. We prefer building with fully OSS
-          technology stack rathar than PaSS like Firebase.
-        </div>
       </section>
     </div>
   )
