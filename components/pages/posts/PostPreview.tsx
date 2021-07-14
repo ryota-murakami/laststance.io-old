@@ -1,13 +1,11 @@
 import React from 'react'
 import { Avatar } from '../../elements/Avatar'
 import Date from '../../elements/Date'
-import CoverImage from '../../elements/CoverImage'
 import Link from 'next/link'
 import { Author, Post } from '../../../DataStructure'
 
 interface Props {
   title: Post['title']
-  coverImageUrl?: Post['coverImageUrl']
   date: Post['date']
   slug: Post['slug']
   author: Author
@@ -16,7 +14,6 @@ interface Props {
 
 const PostPreview: React.FC<Props> = ({
   title,
-  coverImageUrl,
   date,
   slug,
   author,
@@ -24,15 +21,7 @@ const PostPreview: React.FC<Props> = ({
 }) => {
   return (
     <div className={className ? `mx-auto ${className}` : 'mx-auto'}>
-      <div className="mb-5">
-        <CoverImage
-          width={600}
-          height={500}
-          slug={slug}
-          title={title}
-          coverImageUrl={coverImageUrl}
-        />
-      </div>
+      <div className="mb-5"></div>
       <div className="pl-4 pr-4">
         <h3 className="text-3xl mb-3 leading-snug text-center">
           <Link as={`/posts/${slug}`} href="/posts/[slug]">

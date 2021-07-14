@@ -17,7 +17,6 @@ export const MoreStories: React.FC<Props> = ({ posts }) => {
           <PostPreview
             key={i}
             title={post.title}
-            coverImageUrl={post.coverImageUrl}
             date={post.date}
             author={post.author}
             slug={post.slug}
