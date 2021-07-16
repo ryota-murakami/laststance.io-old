@@ -14,13 +14,13 @@ const Head: React.FC = () => (
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.ico"
+      href="/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon.ico"
+      href="/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link
@@ -35,7 +35,7 @@ const Head: React.FC = () => (
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
     <meta
       name="description"
-      content="Laststance.io is indipendent organization for OSS activity."
+      content="Laststance.io | a indipendent organization for OSS activity."
     />
     <meta property="og:image" content={HOME_OG_IMAGE_URL} />
   </NextHead>
