@@ -16,7 +16,7 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostPage: React.FC<Props> = ({ post, morePosts, preview }) => {
+const PostPage: React.FC<Props> = ({ post, morePosts }) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage bage statusCode={404} />

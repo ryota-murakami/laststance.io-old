@@ -11,13 +11,7 @@ interface Props {
   slug: Post['slug']
 }
 
-const PostHeader: React.FC<Props> = ({
-  title,
-  coverImageUrl,
-  date,
-  author,
-  slug,
-}) => (
+const PostHeader: React.FC<Props> = ({ title, date, author }) => (
   <>
     <PostTitle>{title}</PostTitle>
     <div className="hidden md:block md:mb-12">

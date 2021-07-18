@@ -9,7 +9,7 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostsPage: React.FC<Props> = ({ allPosts, preview }) => {
+const PostsPage: React.FC<Props> = ({ allPosts }) => {
   return (
     <div className="px-20 m-auto w-full">
       <ul className="flex flex-col w-full">

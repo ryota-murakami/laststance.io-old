@@ -1,10 +1,10 @@
 // First, we must import the schema creator
 // @ts-ignore
-import createSchema from 'part:@sanity/base/schema-creator'
+import createSchema from 'part:@sanity/base/schema-creator' // eslint-disable-line import/no-unresolved
 
 // Then import schema types from any plugins that might expose them
 // @ts-ignore
-import schemaTypes from 'all:part:@sanity/base/schema-type'
+import schemaTypes from 'all:part:@sanity/base/schema-type' // eslint-disable-line import/no-unresolved
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
