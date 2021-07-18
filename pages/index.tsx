@@ -2,7 +2,7 @@ import React from 'react'
 
 const Index: React.FC = () => {
   return (
-    <div className="min-h-full py-40">
+    <div className="min-h-full py-16">
       <div className="w-full mx-auto py-16">
         <div className="text-center">
           <h2 className="text-4xl font-semibold text-indigo-600 tracking-wide uppercase">
