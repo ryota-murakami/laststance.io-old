@@ -18,29 +18,34 @@ const Header: React.FC<Props> = ({ preview }) => {
 
   return (
     <header className="h-16 box-border border-b w-screen">
-      <section className="container h-full flex flex-row justify-between py-2 px-2 m-auto">
+      <section className="container h-full flex flex-row justify-between p-2">
         <div className="flex items-center">
           <Link href="/">
-            <a className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold tracking-tighter leading-tight">
+            <a className="text-2xl md:text3xl font-bold tracking-tighter leading-tight">
               Laststance.io
             </a>
           </Link>
         </div>
-        <section className="flex flex-row-reverse items-end flex-wrap items-center">
-          <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
-            <Link href="/posts">
-              <a className="hover:text-gray-400">Blog</a>
+        <section className="text-base flex-grow flex space-x-2 justify-end flex-wrap items-center">
+          <div className="flex-shrink">
+            <Link href="/about">
+              <a className="hover:text-gray-400">About</a>
             </Link>
           </div>
-          <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
+          <div className="flex-shrink">
             <a
               className="hover:text-gray-400"
               href="https://digitalstrength.dev/"
               target="_blank"
               rel="noreferrer"
             >
-              Today I Learned
+              TIL
             </a>
+          </div>
+          <div className="flex-shrink">
+            <Link href="/posts">
+              <a className="hover:text-gray-400">Blog</a>
+            </Link>
           </div>
           {/*<div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">*/}
           {/*  <Link href="/activity">*/}
@@ -52,11 +57,6 @@ const Header: React.FC<Props> = ({ preview }) => {
           {/*    <a className="hover:text-gray-400">Project</a>*/}
           {/*  </Link>*/}
           {/*</div>*/}
-          <div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">
-            <Link href="/about">
-              <a className="hover:text-gray-400">About</a>
-            </Link>
-          </div>
         </section>
       </section>
     </header>
