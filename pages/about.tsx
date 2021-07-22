@@ -2,9 +2,9 @@ import React from 'react'
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-full px-40">
+    <main className="main">
       <h1 className="py-6 text-4xl text-center">About</h1>
-      <section className="text-xl">
+      <section className="text-xl px-10 md:px-32 lg:px-64">
         <div>
           Laststance.io is organization for Open Source Software activity by{' '}
           <a
@@ -22,7 +22,7 @@ const About: React.FC = () => {
           Basically to do something following concepts.
         </div>
 
-        <ul className="mt-4 list-disc">
+        <ul className="mt-4 list-disc space-y-4">
           <li>
             {' '}
             We prefer show example app of any mainstream React/JavaScript
@@ -41,7 +41,7 @@ const About: React.FC = () => {
           </li>
         </ul>
       </section>
-    </div>
+    </main>
   )
 }
 

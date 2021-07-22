@@ -2,7 +2,7 @@ import React from 'react'
 
 const Index: React.FC = () => {
   return (
-    <main className="main flex flex-col justify-center space-y-10">
+    <main className="main flex flex-col justify-center space-y-10 lg:-mt-40">
       <h2 className="text-4xl text-center font-semibold text-indigo-600 tracking-wide uppercase">
         Web Engineering is only option for blast on fire my heat soul ignition
       </h2>

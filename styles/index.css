@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .main {
-  @apply container flex-grow px-2;
+  @apply container flex-grow px-2 mx-auto;
 }

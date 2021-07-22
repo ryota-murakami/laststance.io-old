@@ -10,15 +10,15 @@ interface Props {
 const Header: React.FC<Props> = ({ preview }) => {
   if (preview) {
     return (
-      <header className="h-16 box-border border-b w-screen">
+      <header className="h-16 box-border border-b">
         <Preview />
       </header>
     )
   }
 
   return (
-    <header className="h-16 box-border border-b w-screen">
-      <section className="container h-full flex flex-row justify-between p-2">
+    <header className="h-16 box-border border-b flex justify-center">
+      <section className="container h-full flex flex-row justify-between px-2 py-2 md:px-6 mx-auto">
         <div className="flex items-center">
           <Link href="/">
             <a className="text-2xl md:text3xl font-bold tracking-tighter leading-tight">
@@ -26,7 +26,7 @@ const Header: React.FC<Props> = ({ preview }) => {
             </a>
           </Link>
         </div>
-        <section className="text-base flex-grow flex space-x-2 justify-end flex-wrap items-center">
+        <section className="text-base flex-grow flex space-x-2 md:space-x-4 justify-end flex-wrap items-center">
           <div className="flex-shrink">
             <Link href="/about">
               <a className="hover:text-gray-400">About</a>
