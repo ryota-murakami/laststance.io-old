@@ -17,7 +17,7 @@ const Header: React.FC<Props> = ({ preview }) => {
   }
 
   return (
-    <header className="h-16 box-border border-b flex justify-center">
+    <header className="h-16 box-border border-b flex justify-center z-10">
       <section className="container h-full flex flex-row justify-between px-2 py-2 md:px-6 mx-auto">
         <div className="flex items-center">
           <Link href="/">
