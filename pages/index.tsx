@@ -4,7 +4,7 @@ const Index: React.FC = () => {
   return (
     <main className="main flex flex-col justify-center space-y-10 lg:-mt-40">
       <h2 className="text-4xl text-center font-semibold text-indigo-600 tracking-wide uppercase">
-        Web Engineering is only option for blast on fire my heat soul ignition
+        World Wide Web technology Save Us Life
       </h2>
       <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold text-gray-900 text-center overflow-clip overflow-hidden">
         Laststance.io
