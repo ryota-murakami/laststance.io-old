@@ -1,7 +1,7 @@
 import React from 'react'
 import markdownStyles from './MarkdownStyles.module.css'
 import BlockContent from '@sanity/block-content-to-react'
-import { Post } from '../../../../DataStructure'
+import { Post } from '../../../../types'
 
 interface Props {
   content: Post['content']

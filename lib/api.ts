@@ -1,5 +1,5 @@
 import client, { previewClient } from './sanity'
-import { Posts, Post } from '../DataStructure'
+import { Posts, Post } from '../types'
 
 const getUniquePosts = (posts) => {
   const slugs = new Set()

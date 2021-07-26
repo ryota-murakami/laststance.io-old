@@ -2,7 +2,7 @@ import React from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
 import { imageBuilder } from '../../lib/sanity'
-import { Post } from '../../DataStructure'
+import { Post } from '../../types'
 
 interface Props {
   width: number

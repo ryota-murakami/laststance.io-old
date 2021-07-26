@@ -8,7 +8,7 @@ import SectionSeparator from '../../components/elements/SectionSeparator'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/pages/posts/PostTitle'
 import Head from 'next/head'
-import { Posts, Post } from '../../DataStructure'
+import { Posts, Post } from '../../types'
 
 interface Props {
   post: Post
