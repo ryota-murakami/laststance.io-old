@@ -19,7 +19,7 @@ const PostPage: React.FC<Props> = ({ post }) => {
     return <ErrorPage bage statusCode={404} />
   }
   return (
-    <div className="pl-4 pr-4">
+    <div className="pl-4 pr-4 flex-grow">
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
