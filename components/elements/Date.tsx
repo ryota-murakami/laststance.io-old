@@ -8,7 +8,14 @@ interface Props {
 
 const Date: React.FC<Props> = ({ dateString }) => {
   const date = parseISO(dateString)
-  return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>
+  return (
+    <time
+      className="text-lg text-gray-500 flex items-center"
+      dateTime={dateString}
+    >
+      {format(date, 'LLLL	d, yyyy')}
+    </time>
+  )
 }
 
 export default Date

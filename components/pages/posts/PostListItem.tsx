@@ -14,7 +14,7 @@ interface Props {
 const PostListItem: React.FC<Props> = ({ title, date, slug }) => {
   return (
     <li className="w-full flex flex-col mt-8">
-      <h3 className="mb-4 text-4xl md:text-5xl leading-tight">
+      <h3 className="mb-4 text-3xl md:text-4xl leading-tight">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>

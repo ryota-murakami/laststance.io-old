@@ -14,16 +14,9 @@ interface Props {
 const PostHeader: React.FC<Props> = ({ title, date, author }) => (
   <>
     <PostTitle>{title}</PostTitle>
-    <div className="hidden md:block">
+    <div className="flex space-x-4">
       <Avatar name={author.name} picture={author.picture} />
-    </div>
-    <div className="max-w-2xl mx-auto">
-      <div className="block md:hidden mb-6">
-        <Avatar name={author.name} picture={author.picture} />
-      </div>
-      <div className="mb-6 text-lg text-gray-500">
-        <Date dateString={date} />
-      </div>
+      <Date dateString={date} />
     </div>
   </>
 )
