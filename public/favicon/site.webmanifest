@@ -1,6 +1,6 @@
 {
-  "name": "Next.js",
-  "short_name": "Next.js",
+  "name": "Laststance.io",
+  "short_name": "Laststance.io",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -10,5 +10,5 @@
   ],
   "theme_color": "#000000",
   "background_color": "#000000",
-  "display": "standalone"
+  "display": "browser"
 }
