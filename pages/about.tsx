@@ -10,7 +10,7 @@ const About: React.FC = () => {
           activity like learning, building, research, hack, experimental etc...
         </p>
         <p className="mt-4">
-          The autor is
+          The autor is{' '}
           <a
             className="hover:text-gray-400 text-gray-600"
             href="https://ryota-murakami.github.io/"
