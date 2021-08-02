@@ -5,12 +5,12 @@ const About: React.FC = () => {
     <main className="main">
       <h1 className="py-6 text-4xl text-center">About</h1>
       <section className="text-xl px-10 md:px-32 lg:px-64">
-        <div>
-          Laststance.io is organization for space of putting Open Source
-          Software activity like learning, building, research, hack,
-          experimental etc...
-          <br />
-          The autor is Ryota Murakami
+        <p>
+          Laststance.io is organization for logging Open Source Software
+          activity like learning, building, research, hack, experimental etc...
+        </p>
+        <p className="mt-4">
+          The autor is
           <a
             className="hover:text-gray-400 text-gray-600"
             href="https://ryota-murakami.github.io/"
@@ -20,29 +20,21 @@ const About: React.FC = () => {
             Ryota Murakami
           </a>
           .
-        </div>
+        </p>
 
-        <div className="mt-4">Basically doing something these concepts.</div>
+        <p className="mt-4">
+          this is my thought against web and what's bring me into the web
+          development world.
+        </p>
 
-        <ul className="mt-4 list-disc space-y-4">
-          <li>Protect, Deepdive, Creative with Web Technology</li>
-          <li>Bacause Web Technology save our life a lot of aspect</li>
-          <li>So I’ve been fascinated by that.</li>
+        <ul className="mt-8 list-disc space-y-4 pl-4">
+          <li>UI + Data + Internet is key terms.</li>
+          <li>It is give us unlimited possibility.</li>
           <li>
-            I prefer show example app of any mainstream React/JavaScript
-            technology for developers who trying to build a Real World App
+            It is one of the few options to revolt to outrageous, absurd,
+            nightmare in lifetile.
           </li>
-          <li>
-            I prefer building with fully OSS technology stack rathar than using
-            heavly PaSS like Firebase.
-          </li>
-          <li>
-            Digging to know everything when I have interest without a particular
-            job description.
-          </li>
-          <li>
-            Join core of OSS that crucial thing future of web and health of web.
-          </li>
+          <li>It is the hope that might have saved what I had lost.</li>
         </ul>
       </section>
     </main>
