@@ -23,7 +23,7 @@
     "@sanity/client": "2.13.0",
     "@sanity/image-url": "0.140.22",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "^16.4.10",
+    "@types/node": "^16.4.12",
     "@types/react": "^17.0.15",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
