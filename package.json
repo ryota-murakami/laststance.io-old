@@ -20,7 +20,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^11.0.1",
     "@sanity/block-content-to-react": "3.0.0",
-    "@sanity/client": "2.13.0",
+    "@sanity/client": "2.19.0",
     "@sanity/image-url": "0.140.22",
     "@tailwindcss/typography": "^0.4.1",
     "@types/node": "^16.9.2",
