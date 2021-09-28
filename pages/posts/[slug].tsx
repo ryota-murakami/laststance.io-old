@@ -1,12 +1,17 @@
-import { useRouter } from 'next/router'
-import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
+import type {
+  GetStaticProps,
+  GetStaticPaths,
+  GetStaticPropsContext,
+} from 'next'
 import ErrorPage from 'next/error'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+
 import { PostBody } from '../../components/pages/posts/[id]/PostBody'
 import PostHeader from '../../components/pages/posts/[id]/PostHeader'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/pages/posts/PostTitle'
-import Head from 'next/head'
-import { Post } from '../../types'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
+import type { Post } from '../../types'
 
 interface Props {
   post: Post

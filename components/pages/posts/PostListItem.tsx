@@ -1,7 +1,8 @@
-import React from 'react'
-import Date from '../../elements/Date'
 import Link from 'next/link'
-import { Post } from '../../../types'
+import React from 'react'
+
+import type { Post } from '../../../types'
+import Date from '../../elements/Date'
 
 interface Props {
   title: Post['title']

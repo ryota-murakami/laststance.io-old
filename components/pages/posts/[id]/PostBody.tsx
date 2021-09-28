@@ -1,6 +1,7 @@
-import React from 'react'
 import BlockContent from '@sanity/block-content-to-react'
-import { Post } from '../../../../types'
+import React from 'react'
+
+import type { Post } from '../../../../types'
 
 interface Props {
   content: Post['content']

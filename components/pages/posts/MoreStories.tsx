@@ -1,6 +1,8 @@
-import PostPreview from './PostPreview'
 import React from 'react'
-import { Posts } from '../../../types'
+
+import type { Posts } from '../../../types'
+
+import PostPreview from './PostPreview'
 
 interface Props {
   posts: Posts

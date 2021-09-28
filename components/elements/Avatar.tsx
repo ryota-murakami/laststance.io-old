@@ -1,5 +1,6 @@
 import React from 'react'
-import { Author } from '../../types'
+
+import type { Author } from '../../types'
 
 interface Props {
   name: Author['name']

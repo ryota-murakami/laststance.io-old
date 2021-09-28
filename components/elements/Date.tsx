@@ -1,6 +1,7 @@
-import React from 'react'
 import { parseISO, format } from 'date-fns'
-import { Post } from '../../types'
+import React from 'react'
+
+import type { Post } from '../../types'
 
 interface Props {
   dateString: Post['date']

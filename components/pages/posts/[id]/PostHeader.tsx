@@ -1,7 +1,7 @@
+import type { Post } from '../../../../types'
 import { Avatar } from '../../../elements/Avatar'
 import Date from '../../../elements/Date'
 import PostTitle from '../PostTitle'
-import { Post } from '../../../../types'
 
 interface Props {
   title: Post['title']

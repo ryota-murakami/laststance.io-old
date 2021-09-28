@@ -1,5 +1,6 @@
+import type { NextApiRequest, NextApiResponse } from 'next'
+
 import { getPreviewPostBySlug } from '../../lib/api'
-import { NextApiRequest, NextApiResponse } from 'next'
 
 // @Todo I don't know correct return type at the time.
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types

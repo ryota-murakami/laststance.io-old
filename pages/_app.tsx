@@ -1,9 +1,12 @@
-import { AppProps } from 'next/app'
+// eslint-disable-next-line import/order
+import type { AppProps } from 'next/app'
+
 import '../styles/index.css'
-import Head from '../components/Head'
 import React from 'react'
-import Header from '../components/Header'
+
 import { Footer } from '../components/Footer'
+import Head from '../components/Head'
+import Header from '../components/Header'
 
 const MyApp: React.FC<AppProps> = (props) => {
   const PageComponent = props.Component

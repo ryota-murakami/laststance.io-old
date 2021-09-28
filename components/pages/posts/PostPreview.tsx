@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
+
+import type { Author, Post } from '../../../types'
 import { Avatar } from '../../elements/Avatar'
 import Date from '../../elements/Date'
-import Link from 'next/link'
-import { Author, Post } from '../../../types'
 
 interface Props {
   title: Post['title']

@@ -1,6 +1,7 @@
-import React from 'react'
-import { GetStaticPropsContext } from 'next'
+import type { GetStaticPropsContext } from 'next'
 import Link from 'next/link'
+import React from 'react'
+
 import { Preview } from './Preview'
 
 interface Props {

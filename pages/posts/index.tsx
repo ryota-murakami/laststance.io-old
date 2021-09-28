@@ -1,8 +1,9 @@
+import type { GetStaticProps, GetStaticPropsContext } from 'next'
 import React from 'react'
+
 import PostLinkItem from '../../components/pages/posts/PostListItem'
 import { getAllPostsForHome } from '../../lib/api'
-import { GetStaticProps, GetStaticPropsContext } from 'next'
-import { Posts, Post } from '../../types'
+import type { Posts, Post } from '../../types'
 
 interface Props {
   allPosts: Posts
