@@ -12,7 +12,7 @@ interface Props {
 
 const PostsPage: React.FC<Props> = ({ allPosts }) => {
   return (
-    <div className="px-6 sm:px-20 m-auto flex-grow w-full">
+    <div className="px-6 py-6 sm:px-20 m-auto flex-grow w-full">
       <ul className="flex flex-col w-full">
         {allPosts.map((post) => (
           <PostLinkItem
