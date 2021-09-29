@@ -4,7 +4,7 @@ const Index: React.FC = () => {
   return (
     <main className="main flex flex-col justify-center space-y-10 -mt-40 sp:-mt-10">
       <h2 className="text-4xl text-center font-semibold text-indigo-600">
-        UI + Data + Internet technology Save Us Life
+        UI,Data,Web code Lab.
       </h2>
       <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold text-gray-900 text-center overflow-clip overflow-hidden">
         Laststance.io
