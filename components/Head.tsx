@@ -1,9 +1,9 @@
 import NextHead from 'next/head'
-import React from 'react'
+import React, { memo } from 'react'
 
 import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
-const Head: React.FC = () => (
+const Head: React.FC = memo(() => (
   <NextHead>
     <title>Laststance.io</title>
     <link
@@ -41,6 +41,7 @@ const Head: React.FC = () => (
     />
     <meta property="og:image" content={HOME_OG_IMAGE_URL} />
   </NextHead>
-)
+))
+Head.displayName = 'Head'
 
 export default Head

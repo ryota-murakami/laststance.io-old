@@ -1,6 +1,6 @@
 import type { GetStaticPropsContext } from 'next'
 import Link from 'next/link'
-import React from 'react'
+import React, { memo } from 'react'
 
 import { Preview } from './Preview'
 
@@ -8,7 +8,7 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const Header: React.FC<Props> = ({ preview }) => {
+const Header: React.FC<Props> = memo(({ preview }) => {
   if (preview) {
     return (
       <header className="h-16 box-border border-b">
@@ -62,6 +62,7 @@ const Header: React.FC<Props> = ({ preview }) => {
       </section>
     </header>
   )
-}
+})
+Header.displayName = 'Header'
 
 export default Header

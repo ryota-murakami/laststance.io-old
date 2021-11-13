@@ -6,6 +6,7 @@ import type {
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import React, { memo } from 'react'
 
 import { PostBody } from '../../components/pages/posts/[id]/PostBody'
 import PostHeader from '../../components/pages/posts/[id]/PostHeader'
@@ -13,12 +14,39 @@ import PostTitle from '../../components/pages/posts/PostTitle'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import type { Post } from '../../types'
 
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  preview = false,
+}) => {
+  // @ts-ignore @TODO I don't know how resove this at the time
+  const data = await getPostAndMorePosts(params.slug, preview)
+  return {
+    props: {
+      preview,
+      post: data?.post || null,
+    },
+  }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const allPosts = await getAllPostsWithSlug()
+  return {
+    paths:
+      allPosts?.map((post) => ({
+        params: {
+          slug: post.slug,
+        },
+      })) || [],
+    fallback: true,
+  }
+}
+
 interface Props {
   post: Post
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostPage: React.FC<Props> = ({ post }) => {
+const PostPage: React.FC<Props> = memo(({ post }) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage bage statusCode={404} />
@@ -50,33 +78,6 @@ const PostPage: React.FC<Props> = ({ post }) => {
       )}
     </div>
   )
-}
+})
 
 export default PostPage
-
-export const getStaticProps: GetStaticProps = async ({
-  params,
-  preview = false,
-}) => {
-  // @ts-ignore @TODO I don't know how resove this at the time
-  const data = await getPostAndMorePosts(params.slug, preview)
-  return {
-    props: {
-      preview,
-      post: data?.post || null,
-    },
-  }
-}
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const allPosts = await getAllPostsWithSlug()
-  return {
-    paths:
-      allPosts?.map((post) => ({
-        params: {
-          slug: post.slug,
-        },
-      })) || [],
-    fallback: true,
-  }
-}
