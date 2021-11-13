@@ -13,3 +13,5 @@ export interface Post {
 }
 
 export type Posts = Post[]
+
+export type _ = any

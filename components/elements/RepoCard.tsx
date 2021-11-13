@@ -1,6 +1,8 @@
 import type { HTMLAttributes } from 'react'
 import React, { memo } from 'react'
 
+import type { _ } from '../../types'
+
 interface Props {
   name: string
   url: string
