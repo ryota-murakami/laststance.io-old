@@ -53,11 +53,11 @@ const Header: React.FC<Props> = memo(({ preview }) => {
           {/*    <a className="hover:text-gray-400">Activity</a>*/}
           {/*  </Link>*/}
           {/*</div>*/}
-          {/*<div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">*/}
-          {/*  <Link href="/project">*/}
-          {/*    <a className="hover:text-gray-400">Project</a>*/}
-          {/*  </Link>*/}
-          {/*</div>*/}
+          <div className="flex-shrink">
+            <Link href="/repo">
+              <a className="hover:text-gray-400">Repo</a>
+            </Link>
+          </div>
         </section>
       </section>
     </header>
