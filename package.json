@@ -7,6 +7,7 @@
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
+    "test": "exit 0",
     "typecheck": "tsc --noEmit",
     "analyze": "ANALYZE=true next build"
   },
