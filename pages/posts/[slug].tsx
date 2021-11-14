@@ -46,38 +46,41 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostPage: React.FC<Props> = memo(({ post }) => {
-  const router = useRouter()
-  if (!router.isFallback && !post?.slug) {
-    return <ErrorPage bage statusCode={404} />
-  }
-  return (
-    <div className="pl-4 pr-4 flex-grow">
-      {router.isFallback ? (
-        <PostTitle>Loading…</PostTitle>
-      ) : (
-        <>
-          <article>
-            <Head>
-              <title>
-                {post.title} | Laststance.io is indipendent organization for OSS
-                activity.
-              </title>
-              {/* <meta property="og:image" content={post.ogImage.url} /> */}
-            </Head>
-            <PostHeader
-              title={post.title}
-              coverImageUrl={post.coverImageUrl}
-              date={post.date}
-              author={post.author}
-              slug={post.slug}
-            />
-            <PostBody content={post.content} />
-          </article>
-        </>
-      )}
-    </div>
-  )
-})
+const PostPage: React.FC<Props> = memo(
+  ({ post }) => {
+    const router = useRouter()
+    if (!router.isFallback && !post?.slug) {
+      return <ErrorPage bage statusCode={404} />
+    }
+    return (
+      <div className="pl-4 pr-4 flex-grow">
+        {router.isFallback ? (
+          <PostTitle>Loading…</PostTitle>
+        ) : (
+          <>
+            <article>
+              <Head>
+                <title>
+                  {post.title} | Laststance.io is indipendent organization for
+                  OSS activity.
+                </title>
+                {/* <meta property="og:image" content={post.ogImage.url} /> */}
+              </Head>
+              <PostHeader
+                title={post.title}
+                coverImageUrl={post.coverImageUrl}
+                date={post.date}
+                author={post.author}
+                slug={post.slug}
+              />
+              <PostBody content={post.content} />
+            </article>
+          </>
+        )}
+      </div>
+    )
+  },
+  () => true
+)
 
 export default PostPage

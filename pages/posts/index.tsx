@@ -10,24 +10,27 @@ interface Props {
   preview?: GetStaticPropsContext['preview']
 }
 
-const PostsPage: React.FC<Props> = memo(({ allPosts }) => {
-  return (
-    <div className="px-6 py-6 sm:px-20 m-auto flex-grow w-full">
-      <ul className="flex flex-col w-full">
-        {allPosts.map((post) => (
-          <PostLinkItem
-            key={post.slug}
-            title={post.title}
-            coverImageUrl={post.coverImageUrl}
-            date={post.date}
-            author={post.author}
-            slug={post.slug}
-          />
-        ))}
-      </ul>
-    </div>
-  )
-})
+const PostsPage: React.FC<Props> = memo(
+  ({ allPosts }) => {
+    return (
+      <div className="px-6 py-6 sm:px-20 m-auto flex-grow w-full">
+        <ul className="flex flex-col w-full">
+          {allPosts.map((post) => (
+            <PostLinkItem
+              key={post.slug}
+              title={post.title}
+              coverImageUrl={post.coverImageUrl}
+              date={post.date}
+              author={post.author}
+              slug={post.slug}
+            />
+          ))}
+        </ul>
+      </div>
+    )
+  },
+  () => true
+)
 PostsPage.displayName = 'PostsPage'
 
 export default PostsPage

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { memo } from 'react'
 
 import type { Post } from '../../../types'
 import Date from '../../elements/Date'
@@ -12,19 +12,22 @@ interface Props {
   slug: Post['slug']
 }
 
-const PostListItem: React.FC<Props> = ({ title, date, slug }) => {
-  return (
-    <li className="w-full flex flex-col sfpace-y-6">
-      <h3 className="mb-4 text-3xl leading-tight">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <div className="text-lg">
-        <Date dateString={date} />
-      </div>
-    </li>
-  )
-}
+const PostListItem: React.FC<Props> = memo(
+  ({ title, date, slug }) => {
+    return (
+      <li className="w-full flex flex-col sfpace-y-6">
+        <h3 className="mb-4 text-3xl leading-tight">
+          <Link as={`/posts/${slug}`} href="/posts/[slug]">
+            <a className="hover:underline">{title}</a>
+          </Link>
+        </h3>
+        <div className="text-lg">
+          <Date dateString={date} />
+        </div>
+      </li>
+    )
+  },
+  () => true
+)
 
 export default PostListItem
