@@ -41,7 +41,8 @@ const About: React.FC = memo(
 
           <p className="leading-16 mb-2">
             Code is fun, relationsip of OSS comunity is so much fun, one more
-            thing, I'd like to put down some principle to make world more better.
+            thing, I'd like to put down some principle to make world more
+            better.
           </p>
 
           <ul className="mt-8 list-disc space-y-4 pl-4">
