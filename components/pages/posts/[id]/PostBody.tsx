@@ -11,7 +11,7 @@ export const PostBody: React.FC<Props> = memo(
   ({ content }) => {
     return (
       <div className="mt-5 max-w-2xl mx-auto">
-        <BlockContent blocks={content} className="prose prose-xl" />
+        <BlockContent blocks={content} className="prose prose-lg prose-xl" />
       </div>
     )
   },
