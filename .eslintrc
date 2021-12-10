@@ -80,6 +80,7 @@
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-ts-type": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@import/no-named-as-default-member": "off",
     "jsx-a11y/anchor-is-valid": [
