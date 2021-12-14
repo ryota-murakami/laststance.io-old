@@ -16,9 +16,9 @@ const Repo: React.FC = memo(
           the following additional set up.
         </RepoCard>
         <RepoCard
-          name="today-i-learned"
-          url="https://github.com/laststance/today-i-learned"
-          intro="Micro Blog System for personal use (β) 🚧"
+          name="CRUD"
+          url="https://github.com/laststance/crud"
+          intro="Self hosted blog running on jsut a Linux server for React dev."
         >
           The ultimate goal for this project is release it as a personal blog
           starter kit for React developers like Minimal Wordpress. I'm
