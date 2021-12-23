@@ -16,8 +16,8 @@ const Repo: React.FC = memo(
           the following additional set up.
         </RepoCard>
         <RepoCard
-          name="CRUD"
-          url="https://github.com/laststance/CRUD"
+          name="NSX"
+          url="https://github.com/laststance/nsx"
           intro="Micro Blog System for React Developer"
         >
           The ultimate goal for this project is release it as a personal blog
