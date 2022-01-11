@@ -6,6 +6,6 @@ import { Footer } from './Footer'
 test('Footer', () => {
   const { container } = render(<Footer />)
   expect(container).toHaveTextContent(
-    'Copyright © 2021 Laststance.io All rights reserved.'
+    'Copyright © 2022 Laststance.io All rights reserved.'
   )
 })
