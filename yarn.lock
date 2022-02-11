@@ -746,10 +746,10 @@
     "@sanity/block-content-to-hyperscript" "^3.0.0"
     prop-types "^15.6.2"
 
-"@sanity/client@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-3.0.4.tgz#6dfeed6ed302d872bc6c850521b28a5d13f41a62"
-  integrity sha512-4PeFbeG9MlGmruZjN371lim8zXkR625v7Kk4HY50FsWbS1KmSmbcJt+Y5/efFMEYtVVg3rFUTsA4RCPyZcLxOA==
+"@sanity/client@3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-3.0.5.tgz#b3ce57ba83077eeb51f4d11f5aa9ed4fdef599ba"
+  integrity sha512-f0ciNxIVqg8856069hKOAZy7uCwk8hJThie9yrvDYd70ilo4OWWL/xAj2HfxGHYUMBn2hi5GRFOPcD+RNTkCjA==
   dependencies:
     "@sanity/eventsource" "^2.23.0"
     "@sanity/generate-help-url" "^2.18.0"
