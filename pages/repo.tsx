@@ -7,6 +7,15 @@ const Repo: React.FC = memo(
     return (
       <section className="container flex flex-col items-center m-auto h-screen">
         <RepoCard
+          name="vite-rtk-query"
+          url="https://github.com/laststance/vite-rtk-query"
+          intro="Vite RTK Query temptelte."
+        >
+          This include React+TS with familiar pre-setup tooling Redux Toolkit,
+          RTK Query, eslint/prettier, jest/TS/react-testing-library/MSW,
+          tailwindcss, GitHub Actions CI.
+        </RepoCard>
+        <RepoCard
           name="vite-react-ts-extended"
           url="https://github.com/laststance/vite-react-ts-extended"
           intro="Vite's react-ts templete + eslint, jest, tailwindcss."
