@@ -24,12 +24,12 @@ const PostPreview: React.FC<Props> = ({
     <div className={className ? `mx-auto ${className}` : 'mx-auto'}>
       <div className="mb-5"></div>
       <div className="pl-4 pr-4">
-        <h3 className="text-3xl mb-3 leading-snug text-center">
+        <h3 className="mb-3 text-center text-3xl leading-snug">
           <Link as={`/posts/${slug}`} href="/posts/[slug]">
             <a className="hover:underline">{title}</a>
           </Link>
         </h3>
-        <div className="text-lg mb-4">
+        <div className="mb-4 text-lg">
           <Date dateString={date} />
         </div>
         <Avatar name={author.name} picture={author.picture} />

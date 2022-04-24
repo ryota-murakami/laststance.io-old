@@ -4,13 +4,13 @@ const About: React.FC = memo(
   () => {
     return (
       <main className="main">
-        <h1 className="py-6 text-4xl text-center">About</h1>
-        <section className="text-xl px-10 md:px-32 lg:px-48">
+        <h1 className="py-6 text-center text-4xl">About</h1>
+        <section className="px-10 text-xl md:px-32 lg:px-48">
           <section className="mb-4">
             <p className="leading-16 mb-2">
               Hi, I'm{' '}
               <a
-                className="hover:text-gray-400 text-gray-600"
+                className="text-gray-600 hover:text-gray-400"
                 href="https://ryota-murakami.github.io/"
                 target="_blank"
                 rel="noreferrer"

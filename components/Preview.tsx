@@ -5,7 +5,7 @@ export const Preview: React.FC = () => (
     This page is a preview.{' '}
     <a
       href="/api/exit-preview"
-      className="underline hover:text-cyan duration-200 transition-colors"
+      className="hover:text-cyan underline transition-colors duration-200"
     >
       Click here
     </a>{' '}

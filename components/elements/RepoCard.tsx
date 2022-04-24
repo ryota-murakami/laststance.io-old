@@ -12,11 +12,11 @@ interface Props {
 const RepoCard: React.FC<Props & HTMLAttributes<_>> = memo(
   ({ name, url, intro, children }) => {
     return (
-      <div className="w-10/12 py-6 border-b border-gray-200">
+      <div className="w-10/12 border-b border-gray-200 py-6">
         <a
           href={url}
           target="_blank"
-          className="no-underline hover:underline text-2xl leading-6 font-medium text-gray-900"
+          className="text-2xl font-medium leading-6 text-gray-900 no-underline hover:underline"
         >
           {name}
         </a>

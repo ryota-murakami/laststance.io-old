@@ -12,7 +12,7 @@ const Date: React.FC<Props> = memo(
     const date = parseISO(dateString)
     return (
       <time
-        className="text-lg text-gray-500 flex items-center"
+        className="flex items-center text-lg text-gray-500"
         dateTime={dateString}
       >
         {format(date, 'LLLL	d, yyyy')}

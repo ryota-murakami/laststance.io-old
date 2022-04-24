@@ -15,7 +15,7 @@ interface Props {
 const PostListItem: React.FC<Props> = memo(
   ({ title, date, slug }) => {
     return (
-      <li className="w-full flex flex-col sfpace-y-6">
+      <li className="sfpace-y-6 flex w-full flex-col">
         <h3 className="mb-4 text-3xl leading-tight">
           <Link as={`/posts/${slug}`} href="/posts/[slug]">
             <a className="hover:underline">{title}</a>

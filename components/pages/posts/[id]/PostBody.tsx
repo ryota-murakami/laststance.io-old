@@ -10,7 +10,7 @@ interface Props {
 export const PostBody: React.FC<Props> = memo(
   ({ content }) => {
     return (
-      <div className="mt-5 max-w-2xl mx-auto">
+      <div className="mx-auto mt-5 max-w-2xl">
         <BlockContent blocks={content} className="prose prose-lg prose-xl" />
       </div>
     )

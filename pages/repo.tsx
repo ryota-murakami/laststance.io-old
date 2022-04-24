@@ -5,7 +5,7 @@ import RepoCard from '../components/elements/RepoCard'
 const Repo: React.FC = memo(
   () => {
     return (
-      <section className="container flex flex-col items-center m-auto h-screen">
+      <section className="container m-auto flex h-screen flex-col items-center">
         <RepoCard
           name="vite-rtk-query"
           url="https://github.com/laststance/vite-rtk-query"
@@ -43,7 +43,7 @@ const Repo: React.FC = memo(
           <a
             href="https://todomvc.com/"
             target="_blank"
-            className="no-underline hover:underline font-medium text-gray-700"
+            className="font-medium text-gray-700 no-underline hover:underline"
           >
             TODO MVC stuff
           </a>{' '}

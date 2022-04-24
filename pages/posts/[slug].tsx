@@ -53,7 +53,7 @@ const PostPage: React.FC<Props> = memo(
       return <ErrorPage bage statusCode={404} />
     }
     return (
-      <div className="pl-4 pr-4 flex-grow">
+      <div className="flex-grow pl-4 pr-4">
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (

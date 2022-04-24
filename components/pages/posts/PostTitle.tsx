@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 const PostTitle: React.FC = memo(
   ({ children }) => {
     return (
-      <h1 className="text-3xl md:text-4xl leading-tight mb-6 mt-6 text-center md:pl-8 md-pr-4 md:leading-none md:text-left">
+      <h1 className="md-pr-4 mb-6 mt-6 text-center text-3xl leading-tight md:pl-8 md:text-left md:text-4xl md:leading-none">
         {children}
       </h1>
     )

@@ -13,8 +13,8 @@ interface Props {
 const PostsPage: React.FC<Props> = memo(
   ({ allPosts }) => {
     return (
-      <div className="px-6 py-6 sm:px-20 m-auto flex-grow w-full">
-        <ul className="flex flex-col w-full">
+      <div className="m-auto w-full flex-grow px-6 py-6 sm:px-20">
+        <ul className="flex w-full flex-col">
           {allPosts.map((post) => (
             <PostLinkItem
               key={post.slug}

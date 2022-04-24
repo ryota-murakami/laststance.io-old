@@ -12,23 +12,23 @@ const Header: React.FC<Props> = memo(
   ({ preview }) => {
     if (preview) {
       return (
-        <header className="h-16 box-border border-b">
+        <header className="box-border h-16 border-b">
           <Preview />
         </header>
       )
     }
 
     return (
-      <header className="h-16 box-border border-b flex justify-center z-10">
-        <section className="container h-full flex flex-row justify-between px-2 py-2 md:px-6 mx-auto">
+      <header className="z-10 box-border flex h-16 justify-center border-b">
+        <section className="container mx-auto flex h-full flex-row justify-between px-2 py-2 md:px-6">
           <div className="flex items-center">
             <Link href="/">
-              <a className="text-2xl md:text3xl font-bold tracking-tighter leading-tight">
+              <a className="md:text3xl text-2xl font-bold leading-tight tracking-tighter">
                 Laststance.io
               </a>
             </Link>
           </div>
-          <section className="text-base flex-grow flex space-x-2 md:space-x-4 justify-end flex-wrap items-center">
+          <section className="flex flex-grow flex-wrap items-center justify-end space-x-2 text-base md:space-x-4">
             <div className="flex-shrink">
               <Link href="/about">
                 <a className="hover:text-gray-400">About</a>
