@@ -49,14 +49,6 @@ const Repo: React.FC = memo(
           </a>{' '}
           with a modern code style React.
         </RepoCard>
-        <RepoCard
-          name="use-app-state"
-          url="https://github.com/laststance/use-app-state"
-          intro="🌏 useAppState() hook. that global version of setState() built on useContext."
-        >
-          I wanted just setState() but can use across the another components for
-          prototyping.
-        </RepoCard>
       </section>
     )
   },
