@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
+import type { ComponentProps } from 'react'
 
-const PostTitle: React.FC = memo(
+const PostTitle: React.FC<ComponentProps<any>> = memo(
   ({ children }) => {
     return (
       <h1 className="md-pr-4 mb-6 mt-6 text-center text-3xl leading-tight md:pl-8 md:text-left md:text-4xl md:leading-none">
