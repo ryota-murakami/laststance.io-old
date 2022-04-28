@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.5.1",
+    "jest": "^28.0.2",
     "jest-watch-typeahead": "^1.0.0",
     "node-notifier": "^10.0.1",
     "postcss": "^8.4.12",
