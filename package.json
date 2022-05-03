@@ -19,7 +19,7 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^12.1.5",
+    "@next/bundle-analyzer": "^12.1.6",
     "@sanity/block-content-to-react": "3.0.0",
     "@sanity/client": "3.3.0",
     "@sanity/image-url": "1.0.1",
