@@ -40,6 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
     "postcss": "^8.4.13",
     "postcss-preset-env": "^7.5.0",
     "prettier": "^2.6.2",

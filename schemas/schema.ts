@@ -16,9 +16,6 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     {
-      name: 'author',
-      type: 'document',
-      title: 'Author',
       fields: [
         {
           name: 'name',
@@ -31,12 +28,12 @@ export default createSchema({
           type: 'image',
         },
       ],
+      name: 'author',
+      title: 'Author',
+      type: 'document',
     },
 
     {
-      name: 'post',
-      type: 'document',
-      title: 'Post',
       fields: [
         {
           name: 'title',
@@ -45,9 +42,9 @@ export default createSchema({
         },
         {
           name: 'content',
+          of: [{ type: 'block' }],
           title: 'Content',
           type: 'array',
-          of: [{ type: 'block' }],
         },
         {
           name: 'coverImageUrl',
@@ -62,8 +59,8 @@ export default createSchema({
         {
           name: 'author',
           title: 'Author',
-          type: 'reference',
           to: [{ type: 'author' }],
+          type: 'reference',
         },
         {
           name: 'slug',
@@ -71,6 +68,9 @@ export default createSchema({
           type: 'slug',
         },
       ],
+      name: 'post',
+      title: 'Post',
+      type: 'document',
     },
   ]),
 })

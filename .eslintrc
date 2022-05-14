@@ -8,6 +8,7 @@
   "plugins": [
     "jsx-a11y",
     "import",
+    "sort-keys-fix",
     "react-hooks",
     "@typescript-eslint",
     "prettier"
@@ -15,8 +16,7 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true,
-    "jest": true
+    "es6": true
   },
   "globals": {
     "JSX": "readonly"
@@ -74,13 +74,15 @@
     "import/default": "error",
     "import/export": "error",
     "import/no-named-as-default": "warn",
+    "import/no-named-as-default-member": "off",
     "import/no-duplicates": "error",
+    "import/no-unresolved": "error",
+    "sort-keys-fix/sort-keys-fix": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-function": "off",
-    "@import/no-named-as-default-member": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {

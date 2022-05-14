@@ -72,5 +72,5 @@ export async function getPostAndMorePosts(
       { slug }
     ),
   ])
-  return { post, morePosts: getUniquePosts(morePosts) }
+  return { morePosts: getUniquePosts(morePosts), post }
 }

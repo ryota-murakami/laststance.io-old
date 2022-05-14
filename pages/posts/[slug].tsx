@@ -22,8 +22,8 @@ export const getStaticProps: GetStaticProps = async ({
   const data = await getPostAndMorePosts(params.slug, preview)
   return {
     props: {
-      preview,
       post: data?.post || null,
+      preview,
     },
   }
 }
@@ -31,13 +31,13 @@ export const getStaticProps: GetStaticProps = async ({
 export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug()
   return {
+    fallback: true,
     paths:
       allPosts?.map((post) => ({
         params: {
           slug: post.slug,
         },
       })) || [],
-    fallback: true,
   }
 }
 
