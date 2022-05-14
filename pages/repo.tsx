@@ -25,7 +25,7 @@ const Repo: React.FC = memo(
           the following additional set up.
         </RepoCard>
         <RepoCard
-          name="NSX"
+          name="SeflPress"
           url="https://github.com/laststance/nsx"
           intro="Micro Blog System for React Developer"
         >
