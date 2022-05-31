@@ -17,10 +17,10 @@ const About: React.FC = memo(
               >
                 Ryota Murakami
               </a>
-              . Tokyo, Japan, age30.
+              . Tokyo, Japan, age 30.
             </p>
             <p className="leading-16 mb-1">
-              Here is just a my website of parsonal Github Organization.{' '}
+              Here is just my website of personal Github Organization.{' '}
             </p>
             <p className="leading-16 mb-1">
               There are two reasons why I personally own a Github Organization.
@@ -28,7 +28,7 @@ const About: React.FC = memo(
           </section>
           <section className="mb-4">
             <p className="leading-16 mb-2">
-              At first I was looking for some English words to use in the NPM
+              At first, I was looking for some English words to use in the NPM
               scoped name, such as "@foo/mylib".
             </p>
             <p className="leading-16 mb-2">
@@ -40,9 +40,8 @@ const About: React.FC = memo(
           </section>
 
           <p className="leading-16 mb-2">
-            Code is fun, relationsip of OSS comunity is so much fun, one more
-            thing, I'd like to put down some principle to make world more
-            better.
+            Code is fun, the relationship of OSS community is so much fun, one more
+            thing, I'd like to put down some principles to make the world a better place.
           </p>
 
           <ul className="mt-8 list-disc space-y-4 pl-4">
@@ -52,7 +51,7 @@ const About: React.FC = memo(
             </li>
             <li>It is the hope that might have saved what I had lost.</li>
             <li>
-              This is the only things I could absolutely crazy about it! 😈
+              These are the only things I could absolutely be crazy about it! 😈
             </li>
           </ul>
         </section>
