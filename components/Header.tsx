@@ -41,13 +41,8 @@ const Header: React.FC<Props> = memo(
                 target="_blank"
                 rel="noreferrer"
               >
-                TIL
+                Diary
               </a>
-            </div>
-            <div className="flex-shrink">
-              <Link href="/posts">
-                <a className="hover:text-gray-400">Blog</a>
-              </Link>
             </div>
             {/*<div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">*/}
             {/*  <Link href="/activity">*/}
