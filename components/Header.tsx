@@ -2,6 +2,8 @@ import type { GetStaticPropsContext } from 'next'
 import Link from 'next/link'
 import React, { memo } from 'react'
 
+import Github from '../components/elements/Github'
+
 import { Preview } from './Preview'
 
 interface Props {
@@ -51,8 +53,13 @@ const Header: React.FC<Props> = memo(
             {/*</div>*/}
             <div className="flex-shrink">
               <Link href="/repo">
-                <a className="hover:text-gray-400">Repo</a>
+                <a className="hover:text-gray-400">Project</a>
               </Link>
+            </div>
+            <div className="flex-shrink">
+              <a href="https://github.com/laststance" target="_blank">
+                <Github />
+              </a>
             </div>
           </section>
         </section>
