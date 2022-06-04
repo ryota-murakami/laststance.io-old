@@ -8,7 +8,7 @@ const Index: React.FC = memo(
           UI<span className="mx-0.5">×</span>
           Data<span className="mx-0.5">×</span>
           Web<span className="mx-0.5">×</span>
-          Code is Lifetime.
+          Code<span className="mx-1"></span> makes our Life Infrastructure.
         </h2>
         <h1 className="overflow-hidden overflow-clip text-center text-5xl font-bold text-gray-900 md:text-8xl lg:text-9xl">
           Laststance.io

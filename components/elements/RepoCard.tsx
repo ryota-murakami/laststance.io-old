@@ -1,7 +1,5 @@
-import type { HTMLAttributes } from 'react'
+import type { ComponentProps } from 'react'
 import React, { memo } from 'react'
-
-import type { _ } from '../../types'
 
 interface Props {
   name: string
@@ -9,7 +7,7 @@ interface Props {
   intro: string
 }
 
-const RepoCard: React.FC<Props & HTMLAttributes<_>> = memo(
+const RepoCard: React.FC<Props & ComponentProps<'div'>> = memo(
   ({ name, url, intro, children }) => {
     return (
       <div className="w-10/12 border-b border-gray-200 py-6">

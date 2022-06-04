@@ -1,25 +1,10 @@
-import type { GetStaticPropsContext } from 'next'
 import Link from 'next/link'
 import React, { memo } from 'react'
 
 import Github from '../components/elements/Github'
 
-import { Preview } from './Preview'
-
-interface Props {
-  preview?: GetStaticPropsContext['preview']
-}
-
-const Header: React.FC<Props> = memo(
-  ({ preview }) => {
-    if (preview) {
-      return (
-        <header className="box-border h-16 border-b">
-          <Preview />
-        </header>
-      )
-    }
-
+const Header: React.FC = memo(
+  () => {
     return (
       <header className="z-10 box-border flex h-16 justify-center border-b">
         <section className="container mx-auto flex h-full flex-row justify-between px-2 py-2 md:px-6">
