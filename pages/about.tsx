@@ -40,8 +40,9 @@ const About: React.FC = memo(
           </section>
 
           <p className="leading-16 mb-2">
-            Code is fun, the relationship of OSS community is so much fun, one more
-            thing, I'd like to put down some principles to make the world a better place.
+            Code is fun, the relationship of OSS community is so much fun, one
+            more thing, I'd like to put down some principles to make the world a
+            better place.
           </p>
 
           <ul className="mt-8 list-disc space-y-4 pl-4">
