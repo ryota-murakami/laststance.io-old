@@ -37,7 +37,7 @@ const Header: React.FC = memo(
             {/*  </Link>*/}
             {/*</div>*/}
             <div className="flex-shrink">
-              <Link href="/repo">
+              <Link href="/project">
                 <a className="hover:text-gray-400">Project</a>
               </Link>
             </div>

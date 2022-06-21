@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 import RepoCard from '../components/elements/RepoCard'
 
-const Repo: React.FC = memo(
+const Project: React.FC = memo(
   () => {
     return (
       <section className="container m-auto flex h-screen flex-col items-center">
@@ -61,6 +61,6 @@ const Repo: React.FC = memo(
   },
   () => true
 )
-Repo.displayName = 'Repo'
+Project.displayName = 'Project'
 
-export default Repo
+export default Project
