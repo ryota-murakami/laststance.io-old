@@ -49,6 +49,13 @@ const Repo: React.FC = memo(
           </a>{' '}
           with a modern code style React.
         </RepoCard>
+        <RepoCard
+          name="eslint-config-typescript-react-pro-beautiful"
+          url="https://github.com/laststance/eslint-config-typescript-react-pro-beautiful"
+          intro="ESLint rules for all of my React + TypesScript projects. Without exhaustive-deps rule :-)"
+        >
+          My TypeScript project's ESLint config.
+        </RepoCard>
       </section>
     )
   },
