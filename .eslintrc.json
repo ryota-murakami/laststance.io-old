@@ -1,5 +1,5 @@
 {
-  "extends": "typescript-react-pro-beautiful",
+  "extends": "typescript-react-pro",
   "rules": {
     "jsx-a11y/anchor-is-valid": "off"
   }
