@@ -35,9 +35,9 @@ const Project: React.FC = memo(
           publish v1 2023 early.
         </RepoCard>
         <RepoCard
-          name="create-react-app-typescript-todo-example-2022"
-          url="https://github.com/laststance/create-react-app-typescript-todo-example-2022"
-          intro="🚀 Create React App TypeScript Todo Example 2022"
+          name="react-typescript-todomvc-2022"
+          url="https://github.com/laststance/react-typescript-todomvc-2022"
+          intro="React TypeScript TodoMVC 2022"
         >
           Keep updating and publish{' '}
           <a
