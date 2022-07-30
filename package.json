@@ -24,7 +24,7 @@
     "@tailwindcss/typography": "^0.5.4",
     "@types/node": "^18.0.5",
     "@types/react": "^18.0.15",
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.8",
     "eslint-config-typescript-react-pro": "^1.4.0",
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.14",
