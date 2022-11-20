@@ -50,9 +50,9 @@ const Project: React.FC = memo(
           with a modern code style React.
         </RepoCard>
         <RepoCard
-          name="eslint-config-typescript-react-pro"
-          url="https://github.com/laststance/eslint-config-typescript-react-pro"
-          intro="ESLint rules for all of my React + TypesScript projects. Without exhaustive-deps rule :-)"
+          name="eslint-config-ts-prefixer"
+          url="https://github.com/laststance/eslint-config-ts-prefixer"
+          intro="ESLint rule set that integrated prettier as one of ESLint rule and specialized fixable rule set :-)"
         >
           My TypeScript project's ESLint config.
         </RepoCard>
