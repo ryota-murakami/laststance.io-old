@@ -11,10 +11,9 @@ const Header: React.FC = memo(
           <div className="flex items-center">
             <Link
               href="/"
-              className="md:text3xl text-2xl font-bold leading-tight tracking-tighter">
-              
-                Laststance.io
-              
+              className="md:text3xl text-2xl font-bold leading-tight tracking-tighter"
+            >
+              Laststance.io
             </Link>
           </div>
           <section className="flex flex-grow flex-wrap items-center justify-end space-x-2 text-base md:space-x-4">
@@ -51,7 +50,7 @@ const Header: React.FC = memo(
           </section>
         </section>
       </header>
-    );
+    )
   },
   () => true
 )
