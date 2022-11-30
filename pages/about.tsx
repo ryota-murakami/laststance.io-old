@@ -17,7 +17,7 @@ const About: React.FC = memo(
               >
                 Ryota Murakami
               </a>
-              . Tokyo, Japan, age 30.
+              . Tokyo, Japan, age 31.
             </p>
             <p className="leading-16 mb-1">
               Here is just my website of personal Github Organization.{' '}
