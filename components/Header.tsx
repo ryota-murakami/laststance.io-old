@@ -9,16 +9,18 @@ const Header: React.FC = memo(
       <header className="z-10 box-border flex h-16 justify-center border-b">
         <section className="container mx-auto flex h-full flex-row justify-between px-2 py-2 md:px-6">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="md:text3xl text-2xl font-bold leading-tight tracking-tighter">
+            <Link
+              href="/"
+              className="md:text3xl text-2xl font-bold leading-tight tracking-tighter">
+              
                 Laststance.io
-              </a>
+              
             </Link>
           </div>
           <section className="flex flex-grow flex-wrap items-center justify-end space-x-2 text-base md:space-x-4">
             <div className="flex-shrink">
-              <Link href="/about">
-                <a className="hover:text-gray-400">About</a>
+              <Link href="/about" className="hover:text-gray-400">
+                About
               </Link>
             </div>
             <div className="flex-shrink">
@@ -37,8 +39,8 @@ const Header: React.FC = memo(
             {/*  </Link>*/}
             {/*</div>*/}
             <div className="flex-shrink">
-              <Link href="/project">
-                <a className="hover:text-gray-400">Project</a>
+              <Link href="/project" className="hover:text-gray-400">
+                Project
               </Link>
             </div>
             <div className="flex-shrink">
@@ -49,7 +51,7 @@ const Header: React.FC = memo(
           </section>
         </section>
       </header>
-    )
+    );
   },
   () => true
 )
