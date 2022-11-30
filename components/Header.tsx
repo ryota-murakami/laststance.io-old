@@ -29,7 +29,7 @@ const Header: React.FC = memo(
                 target="_blank"
                 rel="noreferrer"
               >
-                Diary
+                Blog
               </a>
             </div>
             {/*<div className="px-1 sm:px-4 md:px-4 lg:px-4 flex-shrink">*/}
