@@ -16,9 +16,9 @@ const Project: React.FC = memo(
           tailwindcss, GitHub Actions CI.
         </RepoCard>
         <RepoCard
-          name="vite-react-ts-extended"
-          url="https://github.com/laststance/vite-react-ts-extended"
-          intro="Vite's react-ts templete + eslint, jest, tailwindcss."
+          name=" create-react-app-alter"
+          url="https://github.com/laststance/create-react-app-alter "
+          intro="My CRA alternative. ⚛️"
         >
           This is the official Vite template(npm init vite@latest{' '}
           <span>(npm init vite@latest myapp -- --template react-ts)</span> with
