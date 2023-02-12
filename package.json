@@ -23,7 +23,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.13.0",
-    "@types/react": "^18.0.27",
+    "@types/react": "^18.0.28",
     "autoprefixer": "^10.4.13",
     "eslint-config-next": "^13.1.6",
     "eslint-config-typescript-react-pro": "^1.8.0",
