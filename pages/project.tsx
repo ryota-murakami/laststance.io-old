@@ -16,8 +16,8 @@ const Project: React.FC = memo(
           tailwindcss, GitHub Actions CI.
         </RepoCard>
         <RepoCard
-          name=" create-react-app-alter"
-          url="https://github.com/laststance/create-react-app-alter"
+          name=" create-react-app-vite"
+          url="https://github.com/laststance/create-react-app-vite"
           intro="My CRA alternative. ⚛️"
         >
           This is the official Vite template(npm init vite@latest{' '}
