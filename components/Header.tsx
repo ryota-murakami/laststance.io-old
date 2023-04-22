@@ -29,7 +29,7 @@ const Header: React.FC = memo(
                 target="_blank"
                 rel="noreferrer"
               >
-                Blog
+                ReadlingList
               </a>
             </div>
             <div className="flex-shrink">
