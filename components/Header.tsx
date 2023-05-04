@@ -25,7 +25,7 @@ const Header: React.FC = memo(
             <div className="flex-shrink">
               <a
                 className="hover:text-gray-400"
-                href="https://digitalstrength.dev/"
+                href="https://nsx.malloc.tokyo/"
                 target="_blank"
                 rel="noreferrer"
               >
