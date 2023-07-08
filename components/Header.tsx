@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { memo } from 'react'
 
-import Github from '../components/elements/Github'
+import Github from './elements/Github'
 
 const Header: React.FC = memo(
   () => {
