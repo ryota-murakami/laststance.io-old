@@ -59,7 +59,7 @@ const Project: React.FC = memo(
       </section>
     )
   },
-  () => true
+  () => true,
 )
 Project.displayName = 'Project'
 

@@ -13,6 +13,6 @@ export const Footer: React.FC = memo(
       </footer>
     )
   },
-  () => true
+  () => true,
 )
 Footer.displayName = 'Footer'

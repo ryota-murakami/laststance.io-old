@@ -25,7 +25,7 @@ const RepoCard: React.FC<Props & ComponentProps<'div'>> = memo(
       </div>
     )
   },
-  () => true
+  () => true,
 )
 RepoCard.displayName = 'RepoCard'
 

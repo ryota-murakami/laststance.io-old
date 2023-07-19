@@ -16,7 +16,7 @@ const Index: React.FC = memo(
       </main>
     )
   },
-  () => true
+  () => true,
 )
 Index.displayName = 'Index'
 

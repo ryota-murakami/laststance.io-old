@@ -49,7 +49,7 @@ const About: React.FC = memo(
       </main>
     )
   },
-  () => true
+  () => true,
 )
 About.displayName = 'About'
 

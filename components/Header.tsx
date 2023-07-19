@@ -47,7 +47,7 @@ const Header: React.FC = memo(
       </header>
     )
   },
-  () => true
+  () => true,
 )
 Header.displayName = 'Header'
 
