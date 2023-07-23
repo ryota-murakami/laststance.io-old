@@ -1,18 +1,23 @@
 import React, { memo } from 'react'
 
+// @TODO up content something
 const Index: React.FC = memo(
   () => {
     return (
-      <main className="main relative bottom-20 flex flex-col justify-center space-y-10 sp:bottom-5">
-        <h2 className="text-center text-4xl font-semibold text-indigo-600">
-          Straightforward Web Technology for Better World
+      <main className="main bottom-20 flex flex-col sp:bottom-5">
+        <h2 className="mt-40 text-center text-4xl font-semibold text-indigo-600">
+          Straightforward Web Application Framework for Better World
         </h2>
-        <h1 className="overflow-hidden overflow-clip text-center text-5xl font-bold text-gray-900 md:text-8xl lg:text-9xl">
+        <h1 className="mt-10 overflow-clip text-center text-5xl font-bold text-gray-900 md:text-8xl lg:text-9xl">
           Laststance.io
         </h1>
-        <p className="pt-15 text-center text-2xl leading-none text-gray-500 md:text-4xl">
-          Laststance.io is independent OSS organization
-        </p>
+
+        <div className="mt-32">
+          <p className="text-center text-2xl leading-none text-gray-500 md:text-4xl">
+            Laststance.io is story for become best Framework auther from a
+            contract web dev 🛣️
+          </p>
+        </div>
       </main>
     )
   },

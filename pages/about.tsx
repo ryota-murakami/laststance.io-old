@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 
+//
 const About: React.FC = memo(
   () => {
     return (
