@@ -18,7 +18,7 @@ const Index: React.FC = memo(
             contract web dev 🛣️
           </p>
 
-          <p className="text-center text-2xl leading-none text-gray-500 md:text-4xl">
+          <p className="mt-10 text-center text-2xl leading-none text-gray-500 md:text-4xl">
             "But how? You have no time for do it within 8h 5days per week and
             your exhausted by daily job"
           </p>
