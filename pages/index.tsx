@@ -17,6 +17,11 @@ const Index: React.FC = memo(
             Laststance.io is story for become best Framework auther from a
             contract web dev 🛣️
           </p>
+
+          <p className="text-center text-2xl leading-none text-gray-500 md:text-4xl">
+            "But how? You have no time for do it within 8h 5days per week and
+            your exhausted by daily job"
+          </p>
         </div>
       </main>
     )
