@@ -13,14 +13,9 @@ const Index: React.FC = memo(
         </h1>
 
         <div className="mt-32">
-          <p className="text-center text-2xl leading-none text-gray-500 md:text-4xl">
-            Laststance.io is story for become best Framework auther from a
-            contract web dev 🛣️
-          </p>
-
           <p className="mt-10 text-center text-2xl leading-none text-gray-500 md:text-4xl">
-            "But how? You have no time for do it within 8h 5days per week and
-            your exhausted by daily job"
+            Laststance.io, gig for become best Framework auther from a contract
+            developer. 🛣️
           </p>
         </div>
       </main>

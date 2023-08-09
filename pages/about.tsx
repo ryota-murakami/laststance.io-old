@@ -18,33 +18,23 @@ const About: React.FC = memo(
               >
                 Ryota Murakami
               </a>
-              . Tokyo, Japan, age 31.
+              . Tokyo, Japan, age 32.
             </p>
             <p className="leading-16 mb-8">
               Here is just my website of personal Github Organization.{' '}
             </p>
-            <p className="leading-16 mb-8">
-              There are two reasons why I personally own a Github Organization.
-            </p>
-          </section>
-          <section className="mb-4">
-            <p className="leading-16 mb-8">
-              At first, I was looking for some English words to use in the NPM
-              scoped name, such as "@foo/mylib".
-            </p>
-            <p className="leading-16 mb-8">
-              Secondly, I wanted to have a separate account for the cluttered
-              fork repository, an extension of Helloworld that is trying
-              something new, and a repository that is being developed as OSS
-              with a clear concept.
-            </p>
           </section>
 
-          <p className="leading-16">
-            I am currently focusing on the popularization of "Deno"
-            <br />
-            Because Deno is a platform that allows to build secure "Web
-            Applications" without unnecessary complex ecosystems.
+          <p className="leading-16 mb-8">
+            Laststance.io, gig for become best Framework auther from a contract
+            web dev 🛣️
+          </p>
+          <p className="leading-16 mb-8">
+            "But how? You have no time for do it within 8h 5days per week and
+            your exhausted by daily job"
+          </p>
+          <p className="leading-16 mb-8">
+            Work 3 days per week then, invent everything Webdev/OSS things.
           </p>
         </section>
       </main>
