@@ -18,6 +18,16 @@ const Header: React.FC = memo(
           </div>
           <section className="flex flex-grow flex-wrap items-center justify-end space-x-2 text-base md:space-x-4">
             <div className="flex-shrink">
+              <a
+                className="hover:text-gray-400"
+                href="https://laststance.deno.dev/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
+            </div>
+            <div className="flex-shrink">
               <Link href="/about" className="hover:text-gray-400">
                 About
               </Link>
