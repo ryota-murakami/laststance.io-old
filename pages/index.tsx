@@ -14,7 +14,7 @@ const Index: React.FC = memo(
 
         <div className="mt-32">
           <p className="mt-10 text-center text-2xl leading-none text-gray-500 md:text-4xl">
-            Laststance.io, gig for become best Framework auther from a contract
+            Laststance.io, gig for become best Framework author from a contract
             developer. 🛣️
           </p>
         </div>
