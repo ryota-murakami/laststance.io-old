@@ -35,4 +35,3 @@ yarn-error.log*
 
 .docz/.cache
 tsconfig.tsbuildinfo
-pnpm-lock.yaml
