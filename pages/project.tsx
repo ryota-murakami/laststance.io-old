@@ -7,6 +7,13 @@ const Project: React.FC = memo(
     return (
       <section className="container m-auto flex h-screen flex-col items-center">
         <RepoCard
+          name="eslint-config-ts-prefixer"
+          url="https://github.com/laststance/eslint-config-ts-prefixer"
+          intro="ESLint rule set that integrated prettier as one of ESLint rule and specialized fixable rule set :-)"
+        >
+          My TypeScript project's ESLint config.
+        </RepoCard>
+        <RepoCard
           name="vite-rtk-query"
           url="https://github.com/laststance/vite-rtk-query"
           intro="Vite RTK Query temptelte."
@@ -14,6 +21,13 @@ const Project: React.FC = memo(
           This include React+TS with familiar pre-setup tooling Redux Toolkit,
           RTK Query, eslint/prettier, jest/TS/react-testing-library/MSW,
           tailwindcss, GitHub Actions CI.
+        </RepoCard>
+        <RepoCard
+          name="usd-query"
+          url=""
+          intro="Just make $ alias for document.querySelector."
+        >
+          While developing Browser Extension, I missed jQuery...
         </RepoCard>
         <RepoCard
           name=" create-react-app-vite"
@@ -48,13 +62,6 @@ const Project: React.FC = memo(
             TODO MVC stuff
           </a>{' '}
           with a modern code style React.
-        </RepoCard>
-        <RepoCard
-          name="eslint-config-ts-prefixer"
-          url="https://github.com/laststance/eslint-config-ts-prefixer"
-          intro="ESLint rule set that integrated prettier as one of ESLint rule and specialized fixable rule set :-)"
-        >
-          My TypeScript project's ESLint config.
         </RepoCard>
       </section>
     )
