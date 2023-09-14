@@ -4,7 +4,7 @@ import React, { memo } from 'react'
 const Index: React.FC = memo(
   () => {
     return (
-      <main className="main bottom-20 flex flex-col sp:bottom-5">
+      <main className="flex-1 bottom-20 flex flex-col sp:bottom-5">
         <h2 className="mt-40 text-center text-4xl font-semibold text-indigo-600">
           I'm making tools for reduce yak shaving clutter.
         </h2>

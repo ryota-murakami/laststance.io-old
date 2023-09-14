@@ -5,7 +5,7 @@ import RepoCard from '../components/elements/RepoCard'
 const Project: React.FC = memo(
   () => {
     return (
-      <section className="container m-auto flex h-screen flex-col items-center">
+      <main className="flex-1 bottom-20 flex flex-col items-center sp:bottom-5">
         <RepoCard
           name="eslint-config-ts-prefixer"
           url="https://github.com/laststance/eslint-config-ts-prefixer"
@@ -63,7 +63,7 @@ const Project: React.FC = memo(
           </a>{' '}
           with a modern code style React.
         </RepoCard>
-      </section>
+      </main>
     )
   },
   () => true,

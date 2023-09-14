@@ -4,7 +4,7 @@ import React, { memo } from 'react'
 const About: React.FC = memo(
   () => {
     return (
-      <main className="main">
+      <main className="flex-1 bottom-20 flex flex-col sp:bottom-5">
         <h1 className="py-6 text-center text-4xl">About</h1>
         <section className="px-10 text-xl md:px-32 lg:px-48">
           <section className="mb-8">
